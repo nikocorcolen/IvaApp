@@ -1,0 +1,12 @@
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\IvaApp.dll
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\IvaApp.pdb
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\SQLite.Net.dll
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.dll
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.dll
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.xml
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.xml
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.csprojResolveAssemblyReference.cache
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.dll
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.pdb
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\MainPage.xaml.g.cs
+c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryPage.xaml.g.cs

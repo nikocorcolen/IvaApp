@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvaApp.MainPage">
+  <StackLayout Padding="10" Spacing="10">
+    <Label Text="Bienvenidos"
+           Font="24"
+           HorizontalOptions="Center"
+           TextColor="White"/>
+    <Entry x:Name="userEntry"
+           Placeholder="Usuario"
+           TextColor="White"/>
+    <Entry x:Name="passwordEntry"
+           Placeholder="Contraseña"
+           IsPassword="true"
+           TextColor="White"/>
+    <Button x:Name="signinButton"
+            Text="Ingresar"
+            TextColor="White"
+            BackgroundColor="#77D065"/>
+    <Button x:Name="signupButton"
+            Text="Registrarse"
+            TextColor="White"
+            BackgroundColor="#77D065"/>
+  </StackLayout>
+</ContentPage>

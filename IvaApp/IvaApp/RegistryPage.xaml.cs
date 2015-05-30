@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+
+namespace IvaApp
+{
+    public partial class RegistryPage : ContentPage
+    {
+        public RegistryPage()
+        {
+            InitializeComponent();
+            Title = "Registro";
+            registryButton.Clicked += registryButton_Clicked;
+        }
+
+        public async void registryButton_Clicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(userEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar un usuario", "Aceptar");
+                userEntry.Focus();
+                return;
+            }
+            else if (string.IsNullOrEmpty(passwordEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar una contraseña", "Aceptar");
+                passwordEntry.Focus();
+                return;
+            }
+            else
+            {
+                User u = new User
+                {
+                    Username = userEntry.Text,
+                    Password = passwordEntry.Text
+                };
+                using (var database = new UserDatabase())
+                {
+                    if (database.InsertUser(u))
+                    {
+                        await DisplayAlert("Exito", "Usuario creado correctamente", "Aceptar");
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "Usuario creado incorrectamente", "Aceptar");
+                    }
+                }
+                //Return to the MainPage
+                await Navigation.PushAsync(new MainPage());
+            }
+        }
+    }
+}
