@@ -34,6 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="BuySell.cs" />
+    <Compile Include="BuySellDatabase.cs" />
+    <Compile Include="BuySellPage.xaml.cs">
+      <DependentUpon>BuySellPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ISQLite.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -69,6 +74,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="RegistryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuySellPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -45,7 +45,7 @@ namespace IvaApp
                     }
                     else
                     {
-                        await DisplayAlert("Exito", "Login correcto", "Aceptar");
+                        await Navigation.PushAsync(new BuySellPage());
                     }
                 }
             }

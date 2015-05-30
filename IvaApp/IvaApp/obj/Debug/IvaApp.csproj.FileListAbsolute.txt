@@ -10,3 +10,4 @@ c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.pdb
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\MainPage.xaml.g.cs
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryPage.xaml.g.cs
+C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\BuySellPage.xaml.g.cs
