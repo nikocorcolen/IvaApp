@@ -1,12 +1,12 @@
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\FormsViewGroup.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\IvaApp\IvaApp\bin\Debug\IvaApp.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\packages\SQLite.Net-PCL.3.0.5\lib\MonoAndroid\SQLite.Net.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\packages\SQLite.Net-PCL.3.0.5\lib\MonoAndroid\SQLite.Net.Platform.XamarinAndroid.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Core.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
-C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll
+C:\Users\Nicolas\Documents\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\FormsViewGroup.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\IvaApp.dll
+C:\Users\Nicolas\Documents\IvaApp\packages\SQLite.Net-PCL.3.0.5\lib\MonoAndroid\SQLite.Net.dll
+C:\Users\Nicolas\Documents\IvaApp\packages\SQLite.Net-PCL.3.0.5\lib\MonoAndroid\SQLite.Net.Platform.XamarinAndroid.dll
+C:\Users\Nicolas\Documents\IvaApp\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
+C:\Users\Nicolas\Documents\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Core.dll
+C:\Users\Nicolas\Documents\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
+C:\Users\Nicolas\Documents\IvaApp\packages\Xamarin.Forms.1.3.3.6323\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll
