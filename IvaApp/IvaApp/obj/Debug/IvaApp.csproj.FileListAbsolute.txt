@@ -24,3 +24,4 @@ C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryPage.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\BuySellPage.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryBuy.xaml.g.cs

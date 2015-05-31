@@ -44,7 +44,7 @@ namespace IvaApp
 
         public async void registryBuyButton_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Aviso", "Registro de compras", "Aceptar");
+            await Navigation.PushAsync(new RegistryBuy());
         }
     }
 }

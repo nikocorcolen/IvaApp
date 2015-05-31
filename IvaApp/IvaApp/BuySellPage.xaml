@@ -2,27 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.BuySellPage">
-  <StackLayout Padding="40" Spacing="20">
-    <Button x:Name="registryBuyButton"
-            Text="Registrar comrpa"
-            TextColor="White"
-            BackgroundColor="#77D065"/>
-    <Button x:Name="registrySellButton"
-            Text="Registrar venta"
-            TextColor="White"
-            BackgroundColor="#77D065"/>
-    <Button x:Name="simulateBuyButton"
-            Text="Simular compra"
-            TextColor="White"
-            BackgroundColor="#77D065"/>
-    <Button x:Name="simulateSellButton"
-            Text="Simular venta"
-            TextColor="White"
-            BackgroundColor="#77D065"/>
-    <Label x:Name="ivaLabel"
-           Text=""
-           Font="24"
-           HorizontalOptions="Center"
-           TextColor="White"/>
-  </StackLayout>
+  <ScrollView>
+    <StackLayout Padding="40" Spacing="20">
+      <Button x:Name="registryBuyButton"
+              Text="Registrar comrpa"
+              TextColor="White"
+              BackgroundColor="#77D065"/>
+      <Button x:Name="registrySellButton"
+              Text="Registrar venta"
+              TextColor="White"
+              BackgroundColor="#77D065"/>
+      <Button x:Name="simulateBuyButton"
+              Text="Simular compra"
+              TextColor="White"
+              BackgroundColor="#77D065"/>
+      <Button x:Name="simulateSellButton"
+              Text="Simular venta"
+              TextColor="White"
+              BackgroundColor="#77D065"/>
+      <Label x:Name="ivaLabel"
+             Text=""
+             Font="24"
+             HorizontalOptions="Center"
+             TextColor="White"/>
+    </StackLayout>
+  </ScrollView>
 </ContentPage>

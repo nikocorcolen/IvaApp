@@ -14,6 +14,9 @@ namespace IvaApp
         public int Amount { get; set; }
         public DateTime Date { get; set; }
         public Boolean isBuy { get; set; }
+        public string Name { get; set; }
+        public int Factura { get; set; }
+        public string Description { get; set; }
 
         public BuySell()
         {

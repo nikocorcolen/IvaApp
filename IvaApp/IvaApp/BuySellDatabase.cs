@@ -31,7 +31,7 @@ namespace IvaApp
             }
         }
 
-        public BuySell GetUsuario(int id)
+        public BuySell GetBuySell(int id)
         {
             return _connection.Table<BuySell>().FirstOrDefault(bs => bs.ID == id);
         }
