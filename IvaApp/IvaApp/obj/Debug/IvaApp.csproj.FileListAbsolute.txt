@@ -18,10 +18,10 @@ C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.csprojResolveAssemblyReference.cache
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\MainPage.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryPage.xaml.g.cs
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\BuySellPage.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\BuyAndSellPage.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryBuysPage.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.pdb
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryBuy.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\ResumeBuysPage.xaml.g.cs

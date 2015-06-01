@@ -16,6 +16,7 @@ namespace IvaApp
         {
             InitializeComponent();
             Title = "Compra y Venta";
+            toolBar();
             using(var databse = new BuySellDatabase())
             {
                 ivaLabel.Text = textIva + "$400";// + el iva que se obtenga de la consulta a la bd
@@ -25,6 +26,25 @@ namespace IvaApp
             registrySellButton.Clicked += registrySellButton_Clicked;
             simulateBuyButton.Clicked += simulateBuyButton_Clicked;
             simulateSellButton.Clicked += simulateSellButton_Clicked;
+        }
+
+        private void toolBar()
+        {
+            ToolbarItems.Clear();
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Compras",
+                Order = ToolbarItemOrder.Secondary,
+                Priority = 0,
+                Command = new Command(() => Navigation.PushAsync(new BuyPage()))
+            });
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Salir",
+                Order = ToolbarItemOrder.Secondary,
+                Priority = 0,
+                Command = new Command(() => DependencyService.Get<IClose>().Close_App())
+            });
         }
 
         public async void simulateSellButton_Clicked(object sender, EventArgs e)

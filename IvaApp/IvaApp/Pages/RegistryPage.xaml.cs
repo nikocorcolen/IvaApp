@@ -14,7 +14,20 @@ namespace IvaApp
         {
             InitializeComponent();
             Title = "Registro";
+            toolBar();
             registryButton.Clicked += registryButton_Clicked;
+        }
+
+        private void toolBar()
+        {
+            ToolbarItems.Clear();
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Salir",
+                Order = ToolbarItemOrder.Secondary,
+                Priority = 0,
+                Command = new Command(() => DependencyService.Get<IClose>().Close_App())
+            });
         }
 
         public async void registryButton_Clicked(object sender, EventArgs e)

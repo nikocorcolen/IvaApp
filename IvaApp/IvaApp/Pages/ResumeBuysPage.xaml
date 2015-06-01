@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvaApp.BuyPage">
+  <ScrollView>
+    <StackLayout Padding="0" Spacing="0">
+      <Label Text="    Compras Junio de 2015"
+             TextColor="White"
+             FontSize="Medium"/>
+      <ListView x:Name="buyListView"/>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

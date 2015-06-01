@@ -13,7 +13,27 @@ namespace IvaApp
         {
             InitializeComponent();
             Title = "Compra y venta";
+            toolBar();
             okButton.Clicked += okButton_Clicked;
+        }
+
+        private void toolBar()
+        {
+            ToolbarItems.Clear();
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Compras",
+                Order = ToolbarItemOrder.Secondary,
+                Priority = 0,
+                Command = new Command(() => Navigation.PushAsync(new BuyPage()))
+            });
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Salir",
+                Order = ToolbarItemOrder.Secondary,
+                Priority = 0,
+                Command = new Command(() => DependencyService.Get<IClose>().Close_App())
+            });
         }
 
         public async void okButton_Clicked(object sender, EventArgs e)

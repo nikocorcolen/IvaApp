@@ -36,6 +36,14 @@ namespace IvaApp
             return _connection.Table<BuySell>().FirstOrDefault(bs => bs.ID == id);
         }
 
+        public List<BuySell> GetBuySell()
+        {
+            //return _connection.Table<BuySell>().ToList();
+            //return _connection.Table<BuySell>().OrderBy(bs => bs.Date).ToList();
+            return _connection.Table<BuySell>().Where(bs => bs.isBuy == true).OrderBy(bs => bs.Date).ToList();
+                //OrderBy(bs => bs.Date).ToList();
+        }
+
         public void Dispose()
         {
             _connection.Dispose();
