@@ -13,3 +13,19 @@ c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.iOS\
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.iOS\obj\iPhone\Debug\IvaApp.iOS.csprojResolveAssemblyReference.cache
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.iOS\obj\iPhone\Debug\IvaAppiOS.exe
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.iOS\obj\iPhone\Debug\IvaAppiOS.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\IvaAppiOS.exe
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\IvaAppiOS.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\IvaApp.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\SQLite.Net.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\SQLite.Net.Platform.XamarinIOS.Unified.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\IvaApp.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\IvaApp.dll.mdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.xml
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\obj\iPhone\Debug\
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\obj\iPhone\Debug\IvaApp.iOS.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\obj\iPhone\Debug\IvaAppiOS.exe
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.iOS\obj\iPhone\Debug\IvaAppiOS.pdb

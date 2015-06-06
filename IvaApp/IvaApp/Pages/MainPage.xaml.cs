@@ -15,7 +15,6 @@ namespace IvaApp
             InitializeComponent();
             Title = "Calculator App";
             toolBar();
-            
 
             signinButton.Clicked += signinButton_Clicked;
             signupButton.Clicked += signupButton_Clicked;

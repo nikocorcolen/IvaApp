@@ -36,6 +36,7 @@
     <Compile Include="App.cs" />
     <Compile Include="CustomViews\BuyAndSellCell.cs" />
     <Compile Include="IClose.cs" />
+    <Compile Include="INotification.cs" />
     <Compile Include="Pages\ResumeBuysPage.xaml.cs">
       <DependentUpon>ResumeBuysPage.xaml</DependentUpon>
     </Compile>

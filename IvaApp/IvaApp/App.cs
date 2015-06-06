@@ -12,9 +12,23 @@ namespace IvaApp
         public App()
         {
             // The root page of your application
+            //MainPage = new NavigationPage(new MainPage());
             MainPage = new NavigationPage(new MainPage());
             
         }
+
+        //public static Page GetMainPage(string page)
+        //{
+        //    if (page == "second")
+        //    {
+        //        return new NavigationPage(new RegistryBuy());
+        //    }
+        //    else
+        //    {
+        //        return new NavigationPage(new MainPage());
+        //    }
+        //}
+
         protected override void OnStart()
         {
             // Handle when your app starts

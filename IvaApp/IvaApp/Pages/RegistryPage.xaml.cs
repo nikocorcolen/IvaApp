@@ -28,6 +28,13 @@ namespace IvaApp
                 Priority = 0,
                 Command = new Command(() => DependencyService.Get<IClose>().Close_App())
             });
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Salir",
+                Order = ToolbarItemOrder.Secondary,
+                Priority = 0,
+                Command = new Command(() => DependencyService.Get<INotification>().Notification())
+            });
         }
 
         public async void registryButton_Clicked(object sender, EventArgs e)
