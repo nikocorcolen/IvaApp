@@ -33,6 +33,7 @@ namespace IvaApp.Droid
                             .SetAutoCancel(true)
                             .SetContentTitle("Button Clicked")
                             .SetContentText(String.Format("The button has been clicked"))
+                            //.SetDefaults((int)(NotificationDefaults.Sound | NotificationDefaults.Vibrate))
                             .SetContentIntent(resultPendingIntent);
             builder.SetVisibility(NotificationVisibility.Public);
             builder.SetCategory("CATEGORY_ALARM");
