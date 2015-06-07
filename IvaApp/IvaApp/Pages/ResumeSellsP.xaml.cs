@@ -8,31 +8,31 @@ using Xamarin.Forms;
 
 namespace IvaApp.Pages
 {
-    public partial class ResumeBuysP : ContentPage
+    public partial class ResumeSellsP : ContentPage
     {
-        public ResumeBuysP()
+        public ResumeSellsP()
         {
             InitializeComponent();
-            Title = "Resumen de Compras";
+            Title = "Resumen de Ventas";
 
             string monthName = Utilities.GetMonthName();
             int year = DateTime.Now.Year;
 
-            TituloResumen.Text = "Compras " + monthName + " de " + year;
+            TituloResumen.Text = "Ventas " + monthName + " de " + year;
 
             toolBar();
             using (var database = new BuyAndSellDatabase())
             {
-                buyListView.ItemsSource = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
+                sellListView.ItemsSource = database.GetSells(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
             }
 
-            buyListView.ItemSelected += buyListView_ItemSelected;
+            sellListView.ItemSelected += sellListView_ItemSelected;
         }
 
-        void buyListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        void sellListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             BuyAndSell bs = (BuyAndSell)e.SelectedItem;
-            this.Navigation.PushAsync(new DetailBuyP(bs));
+            this.Navigation.PushAsync(new DetailSellP(bs));
         }
 
 

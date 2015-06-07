@@ -40,6 +40,13 @@ namespace IvaApp.Pages
             });
             ToolbarItems.Add(new ToolbarItem
             {
+                Text = "Ventas",
+                Order = ToolbarItemOrder.Secondary,
+                Priority = 0,
+                Command = new Command(() => Navigation.PushAsync(new ResumeSellsP()))
+            });
+            ToolbarItems.Add(new ToolbarItem
+            {
                 Text = "Salir",
                 Order = ToolbarItemOrder.Secondary,
                 Priority = 0,
@@ -59,12 +66,12 @@ namespace IvaApp.Pages
 
         public async void registrySellButton_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Aviso", "Registro de ventas", "Aceptar");
+            await Navigation.PushAsync(new RegistrySellP());
         }
 
         public async void registryBuyButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ResumeBuysP());
+            await Navigation.PushAsync(new RegistryBuyP());
         }
     }
 }

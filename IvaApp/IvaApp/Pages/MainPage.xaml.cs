@@ -13,7 +13,7 @@ namespace IvaApp
         public MainPage()
         {
             InitializeComponent();
-            Title = "Calculator App";
+            Title = "App";
             toolBar();
 
             signinButton.Clicked += signinButton_Clicked;

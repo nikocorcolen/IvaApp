@@ -44,9 +44,14 @@ namespace IvaApp
                 //OrderBy(bs => bs.Date).ToList();
         }
 
-        public List<BuyAndSell> GetBuySell(DateTime start, DateTime finish)
+        public List<BuyAndSell> GetBuys(DateTime start, DateTime finish)
         {
             return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
+        }
+
+        public List<BuyAndSell> GetSells(DateTime start, DateTime finish)
+        {
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 
         public void Dispose()

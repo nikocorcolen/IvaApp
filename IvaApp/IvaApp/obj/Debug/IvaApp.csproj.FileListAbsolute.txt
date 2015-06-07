@@ -27,3 +27,6 @@ C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistrySellP.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\ResumeSellsP.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\DetailSellP.xaml.g.cs

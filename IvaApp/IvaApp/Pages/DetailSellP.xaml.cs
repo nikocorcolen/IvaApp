@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace IvaApp.Pages
 {
-    public partial class DetailBuyP : ContentPage
+    public partial class DetailSellP : ContentPage
     {
-        public DetailBuyP(BuyAndSell bs)
+        public DetailSellP(BuyAndSell bs)
         {
             InitializeComponent();
             Title = "Detalle";
@@ -18,7 +18,6 @@ namespace IvaApp.Pages
             facturaEntry.Text = bs.Factura.ToString();
             dateEntry.Date = bs.Date;
             priceEntry.Text = bs.Price.ToString();
-
         }
     }
 }

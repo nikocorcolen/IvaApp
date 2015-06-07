@@ -42,6 +42,9 @@
     <Compile Include="Pages\DetailBuyP.xaml.cs">
       <DependentUpon>DetailBuyP.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\DetailSellP.xaml.cs">
+      <DependentUpon>DetailSellP.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RegistryBuyP.xaml.cs">
       <DependentUpon>RegistryBuyP.xaml</DependentUpon>
     </Compile>
@@ -54,8 +57,14 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\RegistrySellP.xaml.cs">
+      <DependentUpon>RegistrySellP.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ResumeBuysP.xaml.cs">
       <DependentUpon>ResumeBuysP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ResumeSellsP.xaml.cs">
+      <DependentUpon>ResumeSellsP.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Objects\User.cs" />
@@ -106,6 +115,21 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\ResumeBuysP.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\RegistrySellP.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ResumeSellsP.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\DetailSellP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

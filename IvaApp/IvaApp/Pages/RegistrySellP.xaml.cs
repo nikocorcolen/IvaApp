@@ -8,12 +8,12 @@ using Xamarin.Forms;
 
 namespace IvaApp.Pages
 {
-    public partial class RegistryBuyP : ContentPage
+    public partial class RegistrySellP : ContentPage
     {
-        public RegistryBuyP()
+        public RegistrySellP()
         {
             InitializeComponent();
-            Title = "Nueva Compra";
+            Title = "Nueva Venta";
             toolBar();
             okButton.Clicked += okButton_Clicked;
         }
@@ -56,7 +56,7 @@ namespace IvaApp.Pages
 
                     Price = Int32.Parse(priceEntry.Text),
                     Date = dateEntry.Date,
-                    isBuy = true,
+                    isBuy = false,
                     ProductName = nameEntry.Text,
                     Factura = facturaTemp
                 };
