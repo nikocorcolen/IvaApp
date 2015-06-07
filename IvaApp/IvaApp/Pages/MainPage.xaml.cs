@@ -1,9 +1,9 @@
-﻿using System;
+﻿using IvaApp.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 
 namespace IvaApp
@@ -34,7 +34,7 @@ namespace IvaApp
 
         private void ShowSettingsPage()
         {
-            this.Navigation.PushAsync(new RegistryPage());
+            this.Navigation.PushAsync(new RegistryP());
         }
 
         public async void signinButton_Clicked(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace IvaApp
                     }
                     else
                     {
-                        await Navigation.PushAsync(new BuySellPage());
+                        await Navigation.PushAsync(new BuyAndSellP());
                     }
                 }
             }
@@ -71,7 +71,7 @@ namespace IvaApp
 
         public async void signupButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistryPage());
+            await Navigation.PushAsync(new RegistryP());
         }
     }
 }

@@ -14,16 +14,22 @@ namespace IvaApp.Pages {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class BuyPage : ContentPage {
+    public partial class DetailBuyP : ContentPage {
         
-        private Label TituloResumen;
+        private Entry nameEntry;
         
-        private ListView buyListView;
+        private Entry facturaEntry;
+        
+        private DatePicker dateEntry;
+        
+        private Entry priceEntry;
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(BuyPage));
-            TituloResumen = this.FindByName<Label>("TituloResumen");
-            buyListView = this.FindByName<ListView>("buyListView");
+            this.LoadFromXaml(typeof(DetailBuyP));
+            nameEntry = this.FindByName<Entry>("nameEntry");
+            facturaEntry = this.FindByName<Entry>("facturaEntry");
+            dateEntry = this.FindByName<DatePicker>("dateEntry");
+            priceEntry = this.FindByName<Entry>("priceEntry");
         }
     }
 }

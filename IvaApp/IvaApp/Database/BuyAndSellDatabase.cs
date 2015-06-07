@@ -8,17 +8,17 @@ using Xamarin.Forms;
 
 namespace IvaApp
 {
-    class BuySellDatabase : IDisposable
+    class BuyAndSellDatabase : IDisposable
     {
         private SQLiteConnection _connection;
 
-        public BuySellDatabase()
+        public BuyAndSellDatabase()
         {
             _connection = DependencyService.Get<ISQLite> ().GetConnection ();
-            _connection.CreateTable<BuySell>();
+            _connection.CreateTable<BuyAndSell>();
         }
 
-        public bool InsertBuySell(BuySell bs)
+        public bool InsertBuySell(BuyAndSell bs)
         {
             int value = _connection.Insert(bs);
             if (value == 1)
@@ -31,17 +31,22 @@ namespace IvaApp
             }
         }
 
-        public BuySell GetBuySell(int id)
+        public BuyAndSell GetBuySell(int id)
         {
-            return _connection.Table<BuySell>().FirstOrDefault(bs => bs.ID == id);
+            return _connection.Table<BuyAndSell>().FirstOrDefault(bs => bs.ID == id);
         }
 
-        public List<BuySell> GetBuySell()
+        public List<BuyAndSell> GetBuySell()
         {
             //return _connection.Table<BuySell>().ToList();
             //return _connection.Table<BuySell>().OrderBy(bs => bs.Date).ToList();
-            return _connection.Table<BuySell>().Where(bs => bs.isBuy == true).OrderBy(bs => bs.Date).ToList();
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).OrderBy(bs => bs.Date).ToList();
                 //OrderBy(bs => bs.Date).ToList();
+        }
+
+        public List<BuyAndSell> GetBuySell(DateTime start, DateTime finish)
+        {
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 
         public void Dispose()

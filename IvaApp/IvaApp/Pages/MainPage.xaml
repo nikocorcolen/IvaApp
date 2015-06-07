@@ -20,7 +20,7 @@
               TextColor="White"
               BackgroundColor="#77D065"/>
       <Button x:Name="signupButton"
-              Text="Registrarse"
+              Text="Crear Usuario"
               TextColor="White"
               BackgroundColor="#77D065"/>
     </StackLayout>

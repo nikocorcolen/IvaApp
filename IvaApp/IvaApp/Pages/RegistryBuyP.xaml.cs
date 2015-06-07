@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
-namespace IvaApp
+namespace IvaApp.Pages
 {
-    public partial class RegistryBuy : ContentPage
+    public partial class RegistryBuyP : ContentPage
     {
-        public RegistryBuy()
+        public RegistryBuyP()
         {
             InitializeComponent();
             Title = "Compra y venta";
@@ -25,7 +26,7 @@ namespace IvaApp
                 Text = "Compras",
                 Order = ToolbarItemOrder.Secondary,
                 Priority = 0,
-                Command = new Command(() => Navigation.PushAsync(new BuyPage()))
+                Command = new Command(() => Navigation.PushAsync(new ResumeBuysP()))
             });
             ToolbarItems.Add(new ToolbarItem
             {
@@ -38,10 +39,10 @@ namespace IvaApp
 
         public async void okButton_Clicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(amountEntry.Text))
+            if (string.IsNullOrEmpty(priceEntry.Text))
             {
                 await DisplayAlert("Error", "Debe ingresar un monto", "Aceptar");
-                amountEntry.Focus();
+                priceEntry.Focus();
             }
             else
             {
@@ -50,20 +51,19 @@ namespace IvaApp
                 {
                     facturaTemp = Int32.Parse(facturaEntry.Text);
                 }
-                BuySell bs = new BuySell
+                BuyAndSell bs = new BuyAndSell
                 {
-                    
-                    Amount = Int32.Parse(amountEntry.Text),
+
+                    Price = Int32.Parse(priceEntry.Text),
                     Date = dateEntry.Date,
                     isBuy = true,
-                    Name = nameEntry.Text,
-                    Factura = facturaTemp,
-                    Description = descriptionEntry.Text
+                    ProductName = nameEntry.Text,
+                    Factura = facturaTemp
                 };
-                using (var databse = new BuySellDatabase())
+                using (var databse = new BuyAndSellDatabase())
                 {
                     databse.InsertBuySell(bs);
-                    await Navigation.PushAsync(new BuySellPage());
+                    await Navigation.PushAsync(new BuyAndSellP());
                 }
             }
         }

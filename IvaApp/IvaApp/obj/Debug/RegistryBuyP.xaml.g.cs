@@ -8,13 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IvaApp {
+namespace IvaApp.Pages {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
     
     
-    public partial class RegistryBuysPage : ContentPage {
+    public partial class RegistryBuyP : ContentPage {
         
         private Entry nameEntry;
         
@@ -27,7 +27,7 @@ namespace IvaApp {
         private Button okButton;
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(RegistryBuysPage));
+            this.LoadFromXaml(typeof(RegistryBuyP));
             nameEntry = this.FindByName<Entry>("nameEntry");
             facturaEntry = this.FindByName<Entry>("facturaEntry");
             dateEntry = this.FindByName<DatePicker>("dateEntry");

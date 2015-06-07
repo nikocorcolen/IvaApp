@@ -34,30 +34,33 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="CustomViews\BuyAndSellCell.cs" />
     <Compile Include="IClose.cs" />
     <Compile Include="INotification.cs" />
-    <Compile Include="Pages\ResumeBuysPage.xaml.cs">
-      <DependentUpon>ResumeBuysPage.xaml</DependentUpon>
+    <Compile Include="Pages\BuyAndSellP.xaml.cs">
+      <DependentUpon>BuyAndSellP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DetailBuyP.xaml.cs">
+      <DependentUpon>DetailBuyP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistryBuyP.xaml.cs">
+      <DependentUpon>RegistryBuyP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistryP.xaml.cs">
+      <DependentUpon>RegistryP.xaml</DependentUpon>
     </Compile>
     <Compile Include="Objects\BuyAndSell.cs" />
     <Compile Include="Database\BuyAndSellDatabase.cs" />
-    <Compile Include="Pages\BuyAndSellPage.xaml.cs">
-      <DependentUpon>BuyAndSellPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ISQLite.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ResumeBuysP.xaml.cs">
+      <DependentUpon>ResumeBuysP.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pages\RegistryBuysPage.xaml.cs">
-      <DependentUpon>RegistryBuysPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\RegistryPage.xaml.cs">
-      <DependentUpon>RegistryPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Objects\User.cs" />
     <Compile Include="Database\UserDatabase.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite.Net, Version=3.0.5.0, Culture=neutral, processorArchitecture=MSIL">
@@ -82,22 +85,27 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\RegistryPage.xaml">
+    <EmbeddedResource Include="Pages\BuyAndSellP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\BuyAndSellPage.xaml">
+    <EmbeddedResource Include="Pages\DetailBuyP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\RegistryBuysPage.xaml">
+    <EmbeddedResource Include="Pages\RegistryBuyP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\ResumeBuysPage.xaml">
+    <EmbeddedResource Include="Pages\RegistryP.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ResumeBuysP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

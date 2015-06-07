@@ -7,24 +7,23 @@ using System.Threading.Tasks;
 
 namespace IvaApp
 {
-    class BuySell
+    public class BuyAndSell
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public int Amount { get; set; }
+        public int Price { get; set; }
         public DateTime Date { get; set; }
         public Boolean isBuy { get; set; }
-        public string Name { get; set; }
+        public string ProductName { get; set; }
         public int Factura { get; set; }
-        public string Description { get; set; }
 
-        public BuySell()
+        public BuyAndSell()
         {
         }
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2} {3} {4} {5}", ID, Amount, Date, Name, Factura, Description);
+            return string.Format("{0} {1} {2} {3} {4}", ProductName, Price, ID, Date, Factura);
         }
     }
 }

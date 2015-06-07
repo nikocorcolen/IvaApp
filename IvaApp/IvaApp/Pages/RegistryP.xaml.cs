@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace IvaApp
+namespace IvaApp.Pages
 {
-    public partial class RegistryPage : ContentPage
+    public partial class RegistryP : ContentPage
     {
-        public RegistryPage()
+        public RegistryP()
         {
             InitializeComponent();
-            Title = "Registro";
+            Title = "Crear Usuario";
             toolBar();
             registryButton.Clicked += registryButton_Clicked;
         }
@@ -27,13 +27,6 @@ namespace IvaApp
                 Order = ToolbarItemOrder.Secondary,
                 Priority = 0,
                 Command = new Command(() => DependencyService.Get<IClose>().Close_App())
-            });
-            ToolbarItems.Add(new ToolbarItem
-            {
-                Text = "Salir",
-                Order = ToolbarItemOrder.Secondary,
-                Priority = 0,
-                Command = new Command(() => DependencyService.Get<INotification>().Notification())
             });
         }
 

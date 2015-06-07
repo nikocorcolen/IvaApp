@@ -11,6 +11,13 @@ c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\MainPage.xaml.g.cs
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryPage.xaml.g.cs
 C:\Users\Nicolas\Documents\Visual Studio 2012\Projects\IvaApp\IvaApp\IvaApp\obj\Debug\BuySellPage.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\MainPage.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\BuyAndSellP.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\DetailBuyP.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryBuyP.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryP.xaml.g.cs
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\ResumeBuysP.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\IvaApp.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\IvaApp.pdb
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\SQLite.Net.dll
@@ -18,11 +25,5 @@ C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\MainPage.xaml.g.cs
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryPage.xaml.g.cs
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\BuyAndSellPage.xaml.g.cs
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\RegistryBuysPage.xaml.g.cs
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\ResumeBuysPage.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.pdb
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.csprojResolveAssemblyReference.cache

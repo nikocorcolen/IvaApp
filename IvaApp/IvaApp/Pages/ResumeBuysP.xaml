@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvaApp.Pages.ResumeBuysP">
+  <ScrollView>
+    <Label x:Name="TituloResumen"
+             Text=""
+             TextColor="White"
+             FontSize="Medium"/>
+    <StackLayout Padding="0" Spacing="0">
+      <ListView x:Name="buyListView">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <TextCell Text="{Binding ProductName}"
+                      Detail="{Binding Price}" DetailColor="Gray"/>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

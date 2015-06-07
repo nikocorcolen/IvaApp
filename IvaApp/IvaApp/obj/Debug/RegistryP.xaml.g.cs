@@ -14,16 +14,19 @@ namespace IvaApp.Pages {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class BuyPage : ContentPage {
+    public partial class RegistryP : ContentPage {
         
-        private Label TituloResumen;
+        private Entry userEntry;
         
-        private ListView buyListView;
+        private Entry passwordEntry;
+        
+        private Button registryButton;
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(BuyPage));
-            TituloResumen = this.FindByName<Label>("TituloResumen");
-            buyListView = this.FindByName<ListView>("buyListView");
+            this.LoadFromXaml(typeof(RegistryP));
+            userEntry = this.FindByName<Entry>("userEntry");
+            passwordEntry = this.FindByName<Entry>("passwordEntry");
+            registryButton = this.FindByName<Button>("registryButton");
         }
     }
 }

@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace IvaApp
+namespace IvaApp.Pages
 {
-    public partial class BuySellPage : ContentPage
+    public partial class BuyAndSellP : ContentPage
     {
         private static string textIva = "IVA del mes: ";
 
-        public BuySellPage()
+        public BuyAndSellP()
         {
             InitializeComponent();
             Title = "Compra y Venta";
             toolBar();
-            using(var databse = new BuySellDatabase())
+            using(var databse = new BuyAndSellDatabase())
             {
                 ivaLabel.Text = textIva + "$400";// + el iva que se obtenga de la consulta a la bd
             }
@@ -36,7 +36,7 @@ namespace IvaApp
                 Text = "Compras",
                 Order = ToolbarItemOrder.Secondary,
                 Priority = 0,
-                Command = new Command(() => Navigation.PushAsync(new BuyPage()))
+                Command = new Command(() => Navigation.PushAsync(new ResumeBuysP()))
             });
             ToolbarItems.Add(new ToolbarItem
             {
@@ -64,7 +64,7 @@ namespace IvaApp
 
         public async void registryBuyButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistryBuy());
+            await Navigation.PushAsync(new ResumeBuysP());
         }
     }
 }

@@ -1,24 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IvaApp.RegistryBuy">
+             x:Class="IvaApp.Pages.RegistryBuyP">
   <ScrollView>
     <StackLayout Padding="50" Spacing="10">
       <Entry x:Name="nameEntry"
-             Placeholder="Nombre de la compra"
+             Placeholder="Producto"
              Keyboard="Text"
              TextColor="White"/>
       <Entry x:Name="facturaEntry"
-             Placeholder="Número de factura"
+             Placeholder="Número de factura o boleta"
              Keyboard="Numeric"
-             TextColor="White"/>
-      <Entry x:Name="descriptionEntry"
-             Placeholder="Descripción"
-             Keyboard="Text"
              TextColor="White"/>
       <DatePicker x:Name="dateEntry"
                   IsEnabled="False"/>
-      <Entry x:Name="amountEntry"
+      <Entry x:Name="priceEntry"
              Placeholder="Monto de la compra"
              Keyboard="Numeric"
              TextColor="White"/>
