@@ -11,7 +11,7 @@ namespace IvaApp
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
         public DateTime Date { get; set; }
         public Boolean isBuy { get; set; }
         public string ProductName { get; set; }

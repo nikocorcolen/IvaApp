@@ -16,20 +16,26 @@ namespace IvaApp.Pages {
     
     public partial class DetailSellP : ContentPage {
         
-        private Entry nameEntry;
+        private Label productName;
         
-        private Entry facturaEntry;
+        private Label factura;
         
-        private DatePicker dateEntry;
+        private Label dateProduct;
         
-        private Entry priceEntry;
+        private Label neto;
+        
+        private Label iva;
+        
+        private Label total;
         
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(DetailSellP));
-            nameEntry = this.FindByName<Entry>("nameEntry");
-            facturaEntry = this.FindByName<Entry>("facturaEntry");
-            dateEntry = this.FindByName<DatePicker>("dateEntry");
-            priceEntry = this.FindByName<Entry>("priceEntry");
+            productName = this.FindByName<Label>("productName");
+            factura = this.FindByName<Label>("factura");
+            dateProduct = this.FindByName<Label>("dateProduct");
+            neto = this.FindByName<Label>("neto");
+            iva = this.FindByName<Label>("iva");
+            total = this.FindByName<Label>("total");
         }
     }
 }

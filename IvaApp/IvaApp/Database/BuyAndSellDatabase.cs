@@ -54,6 +54,15 @@ namespace IvaApp
             return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 
+        public string GetIvaMesActual() 
+        {
+            DateTime start = Utilities.GetStartMonth();
+            DateTime finish = Utilities.GetFinishMonth();
+            Double credito =  _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).Sum(bs => bs.Price);
+            Double debito = _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.Date >= start && bs.Date <= finish).Sum(bs => bs.Price);
+            return credito + "+" + debito;
+        }
+
         public void Dispose()
         {
             _connection.Dispose();

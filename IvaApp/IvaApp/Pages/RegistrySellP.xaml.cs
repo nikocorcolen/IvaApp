@@ -54,7 +54,7 @@ namespace IvaApp.Pages
                 BuyAndSell bs = new BuyAndSell
                 {
 
-                    Price = Int32.Parse(priceEntry.Text),
+                    Price = Double.Parse(priceEntry.Text),
                     Date = dateEntry.Date,
                     isBuy = false,
                     ProductName = nameEntry.Text,

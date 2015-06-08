@@ -19,13 +19,36 @@ namespace IvaApp.Pages
             toolBar();
             using(var databse = new BuyAndSellDatabase())
             {
-                ivaLabel.Text = textIva + "$400";// + el iva que se obtenga de la consulta a la bd
+                string[] temp = databse.GetIvaMesActual().Split('+');
+                double credito = Double.Parse(temp[0]);
+                double debito = Double.Parse(temp[1]);
+
+                if (debito - credito < 0)
+                {
+                    ivaLabel.TextColor = Color.Green;
+                }
+                else if (debito - credito > 0)
+                {
+                    ivaLabel.TextColor = Color.Red;
+                }
+                else
+                {
+                    ivaLabel.TextColor = Color.White;
+                }
+
+                ivaLabel.Text = textIva + Utilities.GetIva(debito - credito);
             }
 
             registryBuyButton.Clicked += registryBuyButton_Clicked;
             registrySellButton.Clicked += registrySellButton_Clicked;
             simulateBuyButton.Clicked += simulateBuyButton_Clicked;
             simulateSellButton.Clicked += simulateSellButton_Clicked;
+            ivaLabel.Clicked += ivaLabel_Clicked;
+        }
+
+        public async void ivaLabel_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Aviso", "Detalles iva", "Aceptar");
         }
 
         private void toolBar()

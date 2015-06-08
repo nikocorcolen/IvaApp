@@ -20,11 +20,12 @@
               Text="Simular venta"
               TextColor="White"
               BackgroundColor="#77D065"/>
-      <Label x:Name="ivaLabel"
+      <Button x:Name="ivaLabel"
              Text=""
              Font="24"
              HorizontalOptions="Center"
-             TextColor="White"/>
+             TextColor="White"
+             BackgroundColor="Transparent"/>
     </StackLayout>
   </ScrollView>
 </ContentPage>

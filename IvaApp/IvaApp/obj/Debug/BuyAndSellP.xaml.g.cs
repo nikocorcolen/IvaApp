@@ -24,7 +24,7 @@ namespace IvaApp.Pages {
         
         private Button simulateSellButton;
         
-        private Label ivaLabel;
+        private Button ivaLabel;
         
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(BuyAndSellP));
@@ -32,7 +32,7 @@ namespace IvaApp.Pages {
             registrySellButton = this.FindByName<Button>("registrySellButton");
             simulateBuyButton = this.FindByName<Button>("simulateBuyButton");
             simulateSellButton = this.FindByName<Button>("simulateSellButton");
-            ivaLabel = this.FindByName<Label>("ivaLabel");
+            ivaLabel = this.FindByName<Button>("ivaLabel");
         }
     }
 }

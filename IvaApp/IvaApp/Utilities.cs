@@ -9,9 +9,10 @@ namespace IvaApp
 {
     public static class Utilities
     {
+        private static CultureInfo ci = new CultureInfo("es-CL");
+
         public static string GetMonthName()
         {
-            CultureInfo ci = new CultureInfo("es-ES");
             string month = DateTime.Now.ToString("MMMM", ci);
             return month;
         }
@@ -27,6 +28,21 @@ namespace IvaApp
             DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             DateTime lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
             return lastDayOfMonth;
+        }
+
+        public static string GetNeto(Double total)
+        {
+            return Math.Round((100 * total) / 119,0).ToString("C",ci);
+        }
+
+        public static string GetIva(Double total)
+        {
+            return Math.Round((total * 19) / 119, 0).ToString("C", ci);
+        }
+
+        public static string GetTotal(Double total)
+        {
+            return Math.Round( total, 0).ToString("C", ci);
         }
     }
 }

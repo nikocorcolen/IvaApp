@@ -14,10 +14,15 @@ namespace IvaApp.Pages
         {
             InitializeComponent();
             Title = "Detalle";
-            nameEntry.Text = bs.ProductName;
-            facturaEntry.Text = bs.Factura.ToString();
-            dateEntry.Date = bs.Date;
-            priceEntry.Text = bs.Price.ToString();
+            productName.Text = bs.ProductName;
+            factura.Text = bs.Factura.ToString();
+            dateProduct.Text = bs.Date.Month + "/" + bs.Date.Day + "/" + bs.Date.Year;
+
+            double t = bs.Price;
+
+            neto.Text = Utilities.GetNeto(t);
+            iva.Text = Utilities.GetIva(t);
+            total.Text = Utilities.GetTotal(t);
         }
     }
 }

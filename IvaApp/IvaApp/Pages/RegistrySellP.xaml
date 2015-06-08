@@ -15,7 +15,7 @@
       <DatePicker x:Name="dateEntry"
                   IsEnabled="False"/>
       <Entry x:Name="priceEntry"
-             Placeholder="Monto de la compra"
+             Placeholder="Valor iva incluido"
              Keyboard="Numeric"
              TextColor="White"/>
       <Button x:Name="okButton"
