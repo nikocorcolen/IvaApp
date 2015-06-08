@@ -25,7 +25,6 @@ c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droi
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\R.cs.flag
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\uploadflags.txt
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.pdb
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll.mdb
@@ -43,6 +42,7 @@ C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.pdb
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.dll.mdb
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.dll
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.pdb
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\android\bin\IvaApp.Droid.apk

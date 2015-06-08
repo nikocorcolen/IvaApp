@@ -11,9 +11,9 @@ namespace IvaApp
     {
         private static CultureInfo ci = new CultureInfo("es-CL");
 
-        public static string GetMonthName()
+        public static string GetMonthName(DateTime date)
         {
-            string month = DateTime.Now.ToString("MMMM", ci);
+            string month = date.ToString("MMMM", ci);
             return month;
         }
 

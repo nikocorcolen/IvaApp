@@ -19,7 +19,7 @@ namespace IvaApp.Pages
             toolBar();
             using(var databse = new BuyAndSellDatabase())
             {
-                string[] temp = databse.GetIvaMesActual().Split('+');
+                string[] temp = databse.GetIvaMes(Utilities.GetStartMonth(), Utilities.GetFinishMonth()).Split('+');
                 double credito = Double.Parse(temp[0]);
                 double debito = Double.Parse(temp[1]);
 
@@ -44,11 +44,6 @@ namespace IvaApp.Pages
             simulateBuyButton.Clicked += simulateBuyButton_Clicked;
             simulateSellButton.Clicked += simulateSellButton_Clicked;
             ivaLabel.Clicked += ivaLabel_Clicked;
-        }
-
-        public async void ivaLabel_Clicked(object sender, EventArgs e)
-        {
-            await DisplayAlert("Aviso", "Detalles iva", "Aceptar");
         }
 
         private void toolBar()
@@ -95,6 +90,11 @@ namespace IvaApp.Pages
         public async void registryBuyButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegistryBuyP());
+        }
+
+        public async void ivaLabel_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DetailsIvaP());
         }
     }
 }

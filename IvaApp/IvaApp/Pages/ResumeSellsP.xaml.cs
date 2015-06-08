@@ -15,7 +15,7 @@ namespace IvaApp.Pages
             InitializeComponent();
             Title = "Resumen de Ventas";
 
-            string monthName = Utilities.GetMonthName();
+            string monthName = Utilities.GetMonthName(DateTime.Now);
             int year = DateTime.Now.Year;
 
             TituloResumen.Text = "Ventas " + monthName + " de " + year;
