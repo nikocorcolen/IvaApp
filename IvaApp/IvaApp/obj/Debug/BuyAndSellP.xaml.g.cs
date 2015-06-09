@@ -22,8 +22,6 @@ namespace IvaApp.Pages {
         
         private Button simulateBuyButton;
         
-        private Button simulateSellButton;
-        
         private Button ivaLabel;
         
         private void InitializeComponent() {
@@ -31,7 +29,6 @@ namespace IvaApp.Pages {
             registryBuyButton = this.FindByName<Button>("registryBuyButton");
             registrySellButton = this.FindByName<Button>("registrySellButton");
             simulateBuyButton = this.FindByName<Button>("simulateBuyButton");
-            simulateSellButton = this.FindByName<Button>("simulateSellButton");
             ivaLabel = this.FindByName<Button>("ivaLabel");
         }
     }

@@ -42,7 +42,6 @@ namespace IvaApp.Pages
             registryBuyButton.Clicked += registryBuyButton_Clicked;
             registrySellButton.Clicked += registrySellButton_Clicked;
             simulateBuyButton.Clicked += simulateBuyButton_Clicked;
-            simulateSellButton.Clicked += simulateSellButton_Clicked;
             ivaLabel.Clicked += ivaLabel_Clicked;
         }
 
@@ -70,11 +69,6 @@ namespace IvaApp.Pages
                 Priority = 0,
                 Command = new Command(() => DependencyService.Get<IClose>().Close_App())
             });
-        }
-
-        public async void simulateSellButton_Clicked(object sender, EventArgs e)
-        {
-            await DisplayAlert("Aviso", "Simular ventas", "Aceptar");
         }
 
         public async void simulateBuyButton_Clicked(object sender, EventArgs e)

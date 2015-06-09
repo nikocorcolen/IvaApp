@@ -94,12 +94,6 @@ namespace IvaApp.Pages
                 iva3.Text = Utilities.GetIva(ivaMes3);
 
                 //Mes actual 
-                ivaTotal = ivaMes1 + ivaMes2 + ivaMes3;
-                if (ivaTotal > 0)
-                {
-                    ivaTotal = 0;
-                }
-
                 mesActualI = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
                 mesActualF = mesActualI.AddMonths(1).AddDays(-1);
 
@@ -121,6 +115,15 @@ namespace IvaApp.Pages
                 }
                 mesActual.Text = Utilities.GetMonthName(mesActualI);
                 iva.Text = Utilities.GetIva(ivaTotal);
+
+                //Total
+                Double ivaglbal = ivaMes1 + ivaMes2 + ivaMes3;
+                if (ivaglbal > 0)
+                {
+                    ivaglbal = 0;
+                }
+                ivaglbal += ivaTotal;
+                //total.Text = Utilities.GetTotal(ivaglbal);
 
             };
         }

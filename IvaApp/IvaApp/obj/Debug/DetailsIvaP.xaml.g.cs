@@ -32,8 +32,6 @@ namespace IvaApp.Pages {
         
         private Label iva;
         
-        private Label total;
-        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(DetailsIvaP));
             mes3 = this.FindByName<Label>("mes3");
@@ -44,7 +42,6 @@ namespace IvaApp.Pages {
             iva1 = this.FindByName<Label>("iva1");
             mesActual = this.FindByName<Label>("mesActual");
             iva = this.FindByName<Label>("iva");
-            total = this.FindByName<Label>("total");
         }
     }
 }

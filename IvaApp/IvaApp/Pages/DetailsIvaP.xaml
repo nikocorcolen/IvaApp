@@ -3,75 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.DetailsIvaP">
   <ScrollView>
-    
+
     <StackLayout Padding="50" Spacing="10">
-      
-        <Label x:Name="mes3" 
-               Text=""
-               FontSize="Medium"
-               TextColor="White"/>
-        <StackLayout Orientation="Horizontal">
-          <Label Text="19% IVA:"
-               FontSize="Medium"
-               TextColor="White"/>
-          <Label x:Name="iva3"
-                 Text=""
-                 FontSize="Small"
-                 TextColor="White"/>
-        </StackLayout>
-      
-      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
 
-        <Label x:Name="mes2" 
+      <Label x:Name="mes3"
+             Text=""
+             FontSize="Medium"
+             TextColor="White"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="19% IVA:"
+             FontSize="Medium"
+             TextColor="White"/>
+        <Label x:Name="iva3"
                Text=""
                FontSize="Medium"
                TextColor="White"/>
-        <StackLayout Orientation="Horizontal">
-          <Label Text="19% IVA:"
-               FontSize="Medium"
-               TextColor="White"/>
-          <Label x:Name="iva2"
-                 Text=""
-                 FontSize="Small"
-                 TextColor="White"/>
-        </StackLayout>
+      </StackLayout>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
-      
-        <Label x:Name="mes1" 
+
+      <Label x:Name="mes2"
+             Text=""
+             FontSize="Medium"
+             TextColor="White"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="19% IVA:"
+             FontSize="Medium"
+             TextColor="White"/>
+        <Label x:Name="iva2"
                Text=""
                FontSize="Medium"
                TextColor="White"/>
-        <StackLayout Orientation="Horizontal">
-          <Label Text="19% IVA:"
-               FontSize="Medium"
-               TextColor="White"/>
-          <Label x:Name="iva1"
-                 Text=""
-                 FontSize="Small"
-                 TextColor="White"/>
-          </StackLayout>
+      </StackLayout>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
-      
-        <Label x:Name="mesActual" 
+
+      <Label x:Name="mes1"
+             Text=""
+             FontSize="Medium"
+             TextColor="White"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="19% IVA:"
+             FontSize="Medium"
+             TextColor="White"/>
+        <Label x:Name="iva1"
                Text=""
                FontSize="Medium"
                TextColor="White"/>
-        <StackLayout Orientation="Horizontal">
-          <Label Text="19% IVA:"
-               FontSize="Medium"
-               TextColor="White"/>
-          <Label x:Name="iva"
-                 Text=""
-                 FontSize="Small"
-                 TextColor="White"/>
-        </StackLayout>
-        <Label x:Name="total" 
+      </StackLayout>
+
+      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+
+      <Label x:Name="mesActual"
+             Text=""
+             FontSize="Medium"
+             TextColor="White"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="19% IVA:"
+             FontSize="Medium"
+             TextColor="White"/>
+        <Label x:Name="iva"
                Text=""
                FontSize="Medium"
                TextColor="White"/>
-      
+      </StackLayout>
+
+      <!--<BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+
+
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Total: "
+               FontSize="Medium"
+               TextColor="White"/>
+        <Label x:Name="total"
+               Text=""
+               FontSize="Medium"
+               TextColor="White"/>
+      </StackLayout>-->
+
     </StackLayout>
   </ScrollView>
 </ContentPage>

@@ -13,19 +13,17 @@
               TextColor="White"
               BackgroundColor="#77D065"/>
       <Button x:Name="simulateBuyButton"
-              Text="Simular compra"
+              Text="Simular"
               TextColor="White"
               BackgroundColor="#77D065"/>
-      <Button x:Name="simulateSellButton"
-              Text="Simular venta"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
-      <Button x:Name="ivaLabel"
+      <StackLayout Padding="50">
+        <Button x:Name="ivaLabel"
              Text=""
-             Font="24"
+             FontSize="Medium"
              HorizontalOptions="Center"
              TextColor="White"
              BackgroundColor="Transparent"/>
+      </StackLayout>
     </StackLayout>
   </ScrollView>
 </ContentPage>
