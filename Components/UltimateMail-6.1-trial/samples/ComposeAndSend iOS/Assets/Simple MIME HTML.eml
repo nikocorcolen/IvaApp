@@ -1,0 +1,31 @@
+Message-ID: <7dad6afaa5c341d46a01ef4d5ff3409f@dev>
+Date: Tue, 8 Apr 2014 13:48:24 +0700
+Subject: How are you
+To: <mark@mydomain.com>
+From: <john@mydomain.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="------_=_NextPart_001_1239FCC2.ADC190BF"
+
+This is a multipart MIME message.
+
+--------_=_NextPart_001_1239FCC2.ADC190BF
+Content-Type: text/plain;
+	charset="us-ascii"
+
+Hello Mark,
+
+How are you doing today?
+
+John,
+
+--------_=_NextPart_001_1239FCC2.ADC190BF
+Content-Type: text/html;
+	charset="us-ascii"
+
+<p>Hello Mark,</p>
+<p></p>
+<p>How are you doing today?</p>
+<p></p>
+<p>John,</p>
+--------_=_NextPart_001_1239FCC2.ADC190BF--

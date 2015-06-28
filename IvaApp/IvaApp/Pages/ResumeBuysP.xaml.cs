@@ -24,6 +24,7 @@ namespace IvaApp.Pages
             using (var database = new BuyAndSellDatabase())
             {
                 buyListView.ItemsSource = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
+                List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
             }
 
             buyListView.ItemSelected += buyListView_ItemSelected;

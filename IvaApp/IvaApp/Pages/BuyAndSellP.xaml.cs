@@ -74,6 +74,16 @@ namespace IvaApp.Pages
         public async void simulateBuyButton_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("Aviso", "Simular compras", "Aceptar");
+            using (var database = new BuyAndSellDatabase())
+            {
+                List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
+                DependencyService.Get<ISave>().SaveText("temp.txt", a.ToString());
+            }
+            
+            DependencyService.Get<IEmail>().Send_Email();
+            
+
+
         }
 
         public async void registrySellButton_Clicked(object sender, EventArgs e)

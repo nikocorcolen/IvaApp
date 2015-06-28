@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp">
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:isScrollContainer="true">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblDate" />
+            <EditText
+                android:background="#d6f5ff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDate"
+                android:textColor="#000000" />
+            <TextView
+                android:text="From"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblFrom" />
+            <EditText
+                android:background="#d6f5ff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFrom"
+                android:textColor="#000000" />
+            <TextView
+                android:text="To"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblTo" />
+            <EditText
+                android:background="#d6f5ff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTo"
+                android:textColor="#000000" />
+            <TextView
+                android:text="Subject"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblSubject" />
+            <EditText
+                android:background="#d6f5ff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSubject"
+                android:textColor="#000000" />
+            <TextView
+                android:text="Body"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblBody" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:background="#d6f5ff"
+                    android:inputType="textMultiLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBody"
+                    android:textColor="#000000" />
+            </ScrollView>
+            <Button
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSend"
+                android:layout_below="@id/txtBody"
+                android:text="Config SMTP and Send Message..."
+                android:layout_marginTop="12.7dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

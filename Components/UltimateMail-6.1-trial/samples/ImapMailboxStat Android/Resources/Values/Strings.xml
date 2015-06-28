@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="ApplicationName">Ultimate IMAP Mailbox Stat Demo</string>
+	<string name="ComponentLinkText">Ultimate Mail Product Page</string>
+	<string name="ComponentLinkUrlText">http://www.componentpro.com/imap.net/</string>
+</resources>

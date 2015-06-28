@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="UltimateMail">
+  <name>Ultimate Mail for Mobile</name>
+  <publisher>ComponentPro</publisher>
+  <publisher-url>http://www.componentpro.com/mail.netcf/</publisher-url>
+  <version>6.1</version>
+  <summary>Easily download and manage mails and folders on IMAP4 and POP3 servers as well as compose send email messages</summary>
+  <samples>
+    <sample id="ComposeAndSend iOS">
+      <name>iOS Sample.</name>
+      <summary>Demonstrates How to compose a mail message and send it on iOS.</summary>
+    </sample>
+    <sample id="ImapMailboxStat iOS">
+      <name>iOS Sample.</name>
+      <summary>Demonstrates How to connect to an IMAP server and show the mailbox stat on iOS.</summary>
+    </sample>
+    <sample id="Pop3MailboxStat iOS">
+      <name>iOS Sample.</name>
+      <summary>Demonstrates How to connect to a POP3 server and show the mailbox stat on iOS.</summary>
+    </sample>
+    <sample id="CreateOrLoadMessageAndSendDemo Android">
+      <name>Android Sample.</name>
+      <summary>Demonstrates How to compose a mail message and send it on Android.</summary>
+    </sample>
+    <sample id="ImapMailboxStat Android">
+      <name>Android Sample.</name>
+      <summary>Demonstrates How to connect to an IMAP server and show the mailbox stat on Android.</summary>
+    </sample>
+    <sample id="Pop3MailboxStat Android">
+      <name>Android Sample.</name>
+      <summary>Demonstrates How to connect to a POP3 server and show the mailbox stat on Android.</summary>
+    </sample>
+  </samples>
+</component>

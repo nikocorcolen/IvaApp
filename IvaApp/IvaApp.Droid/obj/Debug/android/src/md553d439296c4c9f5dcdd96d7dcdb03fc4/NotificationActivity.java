@@ -2,7 +2,7 @@ package md553d439296c4c9f5dcdd96d7dcdb03fc4;
 
 
 public class NotificationActivity
-	extends md5d4dd78677dce656d5db26c85a3743ef3.FormsApplicationActivity
+	extends md5530bd51e982e6e7b340b73e88efe666e.FormsApplicationActivity
 	implements
 		mono.android.IGCUserPeer
 {
