@@ -12,9 +12,11 @@ namespace IvaApp
         public App()
         {
             // The root page of your application
-            //MainPage = new NavigationPage(new MainPage());
+            //MainPage = new MasterMainPage();
+
             MainPage = new NavigationPage(new MainPage());
-            
+   
+
         }
 
         //public static Page GetMainPage(string page)

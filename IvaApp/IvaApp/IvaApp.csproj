@@ -38,6 +38,7 @@
     <Compile Include="IEmail.cs" />
     <Compile Include="INotification.cs" />
     <Compile Include="ISave.cs" />
+    <Compile Include="Models\Aplicacion.cs" />
     <Compile Include="Pages\BuyAndSellP.xaml.cs">
       <DependentUpon>BuyAndSellP.xaml</DependentUpon>
     </Compile>
@@ -75,6 +76,7 @@
     <Compile Include="Objects\User.cs" />
     <Compile Include="Database\UserDatabase.cs" />
     <Compile Include="Utilities.cs" />
+    <Compile Include="Views\MasterMainPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite.Net, Version=3.0.5.0, Culture=neutral, processorArchitecture=MSIL">

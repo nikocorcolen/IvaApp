@@ -8,6 +8,6 @@ namespace IvaApp
 {
     public interface ISave
     {
-        void SaveText(string filename, string text);
+        void SaveText(List<BuyAndSell> list);
     }
 }

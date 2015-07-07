@@ -46,7 +46,7 @@ namespace IvaApp.Droid
 
                 //***************
                 var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-                var filePath = Path.Combine(documentsPath, "temp.txt");
+                var filePath = Path.Combine(documentsPath, "temp.csv");
                 //return System.IO.File.ReadAllText(filePath);
                 //***************
 

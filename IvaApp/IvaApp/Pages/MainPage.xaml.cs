@@ -63,7 +63,8 @@ namespace IvaApp
                     }
                     else
                     {
-                        await Navigation.PushAsync(new BuyAndSellP());
+                        //await Navigation.PushAsync(new MasterMainPage());
+                        await Navigation.PushModalAsync(new MasterMainPage());
                     }
                 }
             }
