@@ -137,6 +137,6 @@ C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-hdp
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\slideout.png
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\update.png
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\R.cs.flag
 C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\uploadflags.txt
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\update.png

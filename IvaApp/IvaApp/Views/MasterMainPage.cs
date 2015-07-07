@@ -78,7 +78,7 @@ namespace IvaApp
                         case "Inicio": detalle = new NavigationPage(new BuyAndSellP()); break;
                         case "Registrar Compra": detalle = new NavigationPage(new RegistryBuyP()); break;
                         case "Registrar Venta": detalle = new NavigationPage(new RegistrySellP()); break;
-                        case "Cerrar Sesión": logout_session(); break;
+                        case "Salir": logout_session(); break;
                     }
 
                     if (detalle == null) return;

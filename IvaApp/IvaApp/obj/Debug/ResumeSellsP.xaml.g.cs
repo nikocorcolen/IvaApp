@@ -17,7 +17,7 @@ namespace IvaApp.Pages {
     public partial class ResumeSellsP : ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private Label Del;
+        private Label De;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private DatePicker desdeDate;
@@ -40,7 +40,7 @@ namespace IvaApp.Pages {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ResumeSellsP));
-            Del = this.FindByName<Label>("Del:");
+            De = this.FindByName<Label>("De");
             desdeDate = this.FindByName<DatePicker>("desdeDate");
             Hasta = this.FindByName<Label>("Hasta");
             hastaDate = this.FindByName<DatePicker>("hastaDate");

@@ -5,13 +5,13 @@
   <ScrollView>
     <StackLayout Padding="0" Spacing="0">
       <StackLayout Orientation="Horizontal">
-        <Label x:Name="Del:"
+        <Label x:Name="De"
              Text="Desde"
              TextColor="White"
              FontSize="Medium"/>
         <DatePicker x:Name="desdeDate"/>
         <Label x:Name="Hasta"
-             Text="Al:"
+             Text="A"
              TextColor="White"
              FontSize="Medium"/>
         <DatePicker x:Name="hastaDate"/>
@@ -28,14 +28,14 @@
         </ListView.ItemTemplate>
       </ListView>
 
-      <AbsoluteLayout VerticalOptions="EndAndExpand">
-        <StackLayout>
-          <Button x:Name="nuevo"
-              Text="Nueva"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
-        </StackLayout>
+      <AbsoluteLayout VerticalOptions="End" HorizontalOptions="End">
+        <Button x:Name="nuevo"
+            Text="Nueva"
+            TextColor="White"
+            BackgroundColor="#77D065"/>
       </AbsoluteLayout>
+      
+      
     </StackLayout>
   </ScrollView>
 </ContentPage>
