@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 
 namespace IvaApp.Pages
@@ -44,12 +44,31 @@ namespace IvaApp.Pages
                 passwordEntry.Focus();
                 return;
             }
+            else if (string.IsNullOrEmpty(mailEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar un correo", "Aceptar");
+                mailEntry.Focus();
+                return;
+            }
+            else if (!Regex.IsMatch(mailEntry.Text, "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"))
+            {
+                await DisplayAlert("Error", "Debe ingresar un correo valido", "Aceptar");
+                mailEntry.Focus();
+                return;
+            }
+            else if (Regex.Replace(mailEntry.Text, "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", String.Empty).Length != 0)
+            {
+                await DisplayAlert("Error", "Debe ingresar un correo valido", "Aceptar");
+                mailEntry.Focus();
+                return;
+            }
             else
             {
                 User u = new User
                 {
                     Username = userEntry.Text,
-                    Password = passwordEntry.Text
+                    Password = passwordEntry.Text,
+                    Mail = mailEntry.Text
                 };
                 using (var database = new UserDatabase())
                 {

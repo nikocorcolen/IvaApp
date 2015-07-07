@@ -15,6 +15,10 @@
              Placeholder="Contraseña"
              IsPassword="true"
              TextColor="White"/>
+      <Entry x:Name="mailEntry"
+             Placeholder="Correo"
+             Keyboard="Email"
+             TextColor="White"/>
       <Button x:Name="registryButton"
               Text="Crear"
               TextColor="White"

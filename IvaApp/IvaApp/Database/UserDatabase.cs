@@ -30,6 +30,11 @@ namespace IvaApp
             
         }
 
+        public String GetMail(String username)
+        {
+            return _connection.Table<User>().Where(u => u.Username == username).Select(u => u.Username).ToString();
+        }
+
         public void UpdateUsuario(User u)
         {
             _connection.Update(u);
