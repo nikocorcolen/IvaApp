@@ -9,6 +9,8 @@ namespace IvaApp
 {
     public static class Utilities
     {
+        public static String usuario {get; set; }
+
         private static CultureInfo ci = new CultureInfo("es-CL");
 
         public static string GetMonthName(DateTime date)

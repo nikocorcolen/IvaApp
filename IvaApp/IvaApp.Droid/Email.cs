@@ -22,7 +22,7 @@ namespace IvaApp.Droid
 {
     class Email : IEmail
     {
-        public void Send_Email()
+        public void Send_Email(string correo)
         {
             //SmtpClient client = new SmtpClient();
             //string From = "";

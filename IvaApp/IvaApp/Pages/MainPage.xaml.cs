@@ -64,6 +64,7 @@ namespace IvaApp
                     else
                     {
                         //await Navigation.PushAsync(new MasterMainPage());
+                        Utilities.usuario = userEntry.Text;
                         await Navigation.PushModalAsync(new MasterMainPage());
                     }
                 }

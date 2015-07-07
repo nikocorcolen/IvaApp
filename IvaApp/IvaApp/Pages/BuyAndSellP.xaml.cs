@@ -79,11 +79,11 @@ namespace IvaApp.Pages
                 List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
                 DependencyService.Get<ISave>().SaveText(a);
             }
-
-            DependencyService.Get<IEmail>().Send_Email();
-            
-
-
+            using (var database1 = new UserDatabase())
+            {
+                String correo = database1.GetMail(Utilities.usuario);
+                DependencyService.Get<IEmail>().Send_Email(correo);
+            }
         }
 
         public async void registrySellButton_Clicked(object sender, EventArgs e)
