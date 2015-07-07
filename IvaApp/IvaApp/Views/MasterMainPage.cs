@@ -26,7 +26,7 @@ namespace IvaApp
                 new Aplicacion("Registrar Venta"),
                 new Aplicacion("Simular Compra"),
                 new Aplicacion("Simular Venta"),
-                new Aplicacion("Cerrar Sesión")
+                new Aplicacion("Salir")
             };
 
             ListView listView = new ListView
@@ -91,9 +91,9 @@ namespace IvaApp
             
         }
 
-        public async void logout_session()
+        public void logout_session()
         {
-            await Navigation.PushModalAsync(new MainPage());
+            DependencyService.Get<IClose>().Close_App();
         }
     }
 }

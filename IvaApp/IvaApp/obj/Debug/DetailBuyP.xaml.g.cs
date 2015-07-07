@@ -16,18 +16,28 @@ namespace IvaApp.Pages {
     
     public partial class DetailBuyP : ContentPage {
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label productName;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label factura;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label dateProduct;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label neto;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label iva;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label total;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Button eliminarButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(DetailBuyP));
             productName = this.FindByName<Label>("productName");
@@ -36,6 +46,7 @@ namespace IvaApp.Pages {
             neto = this.FindByName<Label>("neto");
             iva = this.FindByName<Label>("iva");
             total = this.FindByName<Label>("total");
+            eliminarButton = this.FindByName<Button>("eliminarButton");
         }
     }
 }

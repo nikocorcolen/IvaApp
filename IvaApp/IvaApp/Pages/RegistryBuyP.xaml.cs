@@ -14,7 +14,7 @@ namespace IvaApp.Pages
         {
             InitializeComponent();
             Title = "Nueva Compra";
-            toolBar();
+            //toolBar();
             okButton.Clicked += okButton_Clicked;
         }
 
@@ -63,6 +63,10 @@ namespace IvaApp.Pages
                 using (var databse = new BuyAndSellDatabase())
                 {
                     databse.InsertBuySell(bs);
+                    //limpia los campos
+                    facturaEntry.Text = "";
+                    nameEntry.Text = "";
+                    priceEntry.Text = "";
                     await Navigation.PushAsync(new BuyAndSellP());
                 }
             }

@@ -3,11 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.ResumeBuysP">
   <ScrollView>
-    <Label x:Name="TituloResumen"
-             Text=""
+    <StackLayout Padding="0" Spacing="0">
+      <StackLayout Orientation="Horizontal">
+        <Label x:Name="Desde"
+             Text="Del:"
              TextColor="White"
              FontSize="Medium"/>
-    <StackLayout Padding="0" Spacing="0">
+        <DatePicker x:Name="desdeDate"/>
+        <Label x:Name="Hasta"
+             Text="Al:"
+             TextColor="White"
+             FontSize="Medium"/>
+        <DatePicker x:Name="hastaDate"/>
+        <Button x:Name="actualizar"
+              Image="slideout.png"
+              HorizontalOptions="End"/>
+      </StackLayout>
+      
       <ListView x:Name="buyListView">
         <ListView.ItemTemplate>
           <DataTemplate>
@@ -16,6 +28,15 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
+    
+      <AbsoluteLayout VerticalOptions="End" HorizontalOptions="End">
+          <Button x:Name="nuevo"
+              Text="Nueva"
+              TextColor="White"
+              BackgroundColor="#77D065"/>
+      </AbsoluteLayout>
+
+
     </StackLayout>
   </ScrollView>
 </ContentPage>

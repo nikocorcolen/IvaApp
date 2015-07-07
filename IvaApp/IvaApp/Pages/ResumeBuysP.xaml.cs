@@ -17,10 +17,10 @@ namespace IvaApp.Pages
 
             string monthName = Utilities.GetMonthName(DateTime.Now);
             int year = DateTime.Now.Year;
+            desdeDate.Date = Utilities.GetStartMonth();
+            hastaDate.Date = Utilities.GetFinishMonth();
 
-            TituloResumen.Text = "Compras " + monthName + " de " + year;
-
-            toolBar();
+            //toolBar();
             using (var database = new BuyAndSellDatabase())
             {
                 buyListView.ItemsSource = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
@@ -28,6 +28,12 @@ namespace IvaApp.Pages
             }
 
             buyListView.ItemSelected += buyListView_ItemSelected;
+            nuevo.Clicked += nuevo_Clicked;
+        }
+
+        void nuevo_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new RegistryBuyP());
         }
 
         void buyListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

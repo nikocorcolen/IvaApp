@@ -15,7 +15,7 @@ namespace IvaApp.Pages
         {
             InitializeComponent();
             Title = "Compra y Venta";
-            toolBar();
+            //toolBar();
 
             resumeBuyButton.Clicked += registryBuyButton_Clicked;
             resumeSellButton.Clicked += registrySellButton_Clicked;
@@ -65,12 +65,12 @@ namespace IvaApp.Pages
 
         public async void registrySellButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ResumeBuysP());
+            await Navigation.PushAsync(new ResumeSellsP());
         }
 
         public async void registryBuyButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ResumeSellsP());
+            await Navigation.PushAsync(new ResumeBuysP());
         }
 
         public async void detailIvaButton_Clicked(object sender, EventArgs e)

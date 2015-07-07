@@ -14,7 +14,7 @@ namespace IvaApp
         {
             InitializeComponent();
             Title = "App";
-            toolBar();
+            //toolBar();
 
             signinButton.Clicked += signinButton_Clicked;
             signupButton.Clicked += signupButton_Clicked;
@@ -65,6 +65,9 @@ namespace IvaApp
                     {
                         //await Navigation.PushAsync(new MasterMainPage());
                         Utilities.usuario = userEntry.Text;
+                        //limpia los campos
+                        userEntry.Text = "";
+                        passwordEntry.Text = "";
                         await Navigation.PushModalAsync(new MasterMainPage());
                     }
                 }

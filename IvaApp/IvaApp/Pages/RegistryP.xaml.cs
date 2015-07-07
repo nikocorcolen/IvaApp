@@ -14,7 +14,7 @@ namespace IvaApp.Pages
         {
             InitializeComponent();
             Title = "Crear Usuario";
-            toolBar();
+            //toolBar();
             registryButton.Clicked += registryButton_Clicked;
         }
 
@@ -82,6 +82,10 @@ namespace IvaApp.Pages
                     }
                 }
                 //Return to the MainPage
+                //limpia los campos
+                userEntry.Text = "";
+                passwordEntry.Text = "";
+                mailEntry.Text = "";
                 await Navigation.PushAsync(new MainPage());
             }
         }

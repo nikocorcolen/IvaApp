@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.DetailSellP">
   <ScrollView>
-    <StackLayout Padding="50" Spacing="10">
+    <StackLayout Padding="15" Spacing="10">
 
       <Label Text="Producto:"
            FontSize="Medium"
@@ -56,6 +56,13 @@
              Text=""
              FontSize="Small"
              TextColor="White"/>
+
+      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+
+      <Button x:Name="eliminarButton"
+              Text="Eliminar"
+              TextColor="White"
+              BackgroundColor="#77D065"/>
 
     </StackLayout>
   </ScrollView>

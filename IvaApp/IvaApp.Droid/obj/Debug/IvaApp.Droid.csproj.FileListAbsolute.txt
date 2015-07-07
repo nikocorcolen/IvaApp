@@ -25,33 +25,6 @@ c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droi
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\R.cs.flag
 c:\users\nicolas\documents\visual studio 2012\Projects\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\uploadflags.txt
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.pdb
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll.mdb
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.apk
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid-Signed.apk
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\FormsViewGroup.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\SQLite.Net.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\SQLite.Net.Platform.XamarinAndroid.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.pdb
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.dll.mdb
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.csprojResolveAssemblyReference.cache
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.dll
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.pdb
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\android\bin\IvaApp.Droid.apk
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\icon.png
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-hdpi\icon.png
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xhdpi\icon.png
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\R.cs.flag
-C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\uploadflags.txt
 C:\Users\Patolinlp\Desktop\IvaApp-master\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll
 C:\Users\Patolinlp\Desktop\IvaApp-master\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.pdb
 C:\Users\Patolinlp\Desktop\IvaApp-master\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll.mdb
@@ -137,3 +110,33 @@ C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp.Droid\obj\Deb
 C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\R.cs.flag
 C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\uploadflags.txt
 C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\slideout.png
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.dll.mdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid.apk
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.Droid-Signed.apk
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\FormsViewGroup.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\SQLite.Net.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\SQLite.Net.Platform.XamarinAndroid.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\IvaApp.dll.mdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.dll
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\IvaApp.Droid.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\android\bin\IvaApp.Droid.apk
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\slideout.png
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\R.cs.flag
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\uploadflags.txt
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\update.png

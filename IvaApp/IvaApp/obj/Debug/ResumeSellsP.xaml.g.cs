@@ -16,14 +16,37 @@ namespace IvaApp.Pages {
     
     public partial class ResumeSellsP : ContentPage {
         
-        private Label TituloResumen;
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Label Del;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private DatePicker desdeDate;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Label Hasta;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private DatePicker hastaDate;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Button actualizar;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private ListView sellListView;
         
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Button nuevo;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ResumeSellsP));
-            TituloResumen = this.FindByName<Label>("TituloResumen");
+            Del = this.FindByName<Label>("Del:");
+            desdeDate = this.FindByName<DatePicker>("desdeDate");
+            Hasta = this.FindByName<Label>("Hasta");
+            hastaDate = this.FindByName<DatePicker>("hastaDate");
+            actualizar = this.FindByName<Button>("actualizar");
             sellListView = this.FindByName<ListView>("sellListView");
+            nuevo = this.FindByName<Button>("nuevo");
         }
     }
 }

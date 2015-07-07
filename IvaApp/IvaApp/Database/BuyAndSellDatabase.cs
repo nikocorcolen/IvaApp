@@ -18,6 +18,11 @@ namespace IvaApp
             _connection.CreateTable<BuyAndSell>();
         }
 
+        public void DeleteBuyAndSell(BuyAndSell bs)
+        {
+            _connection.Delete(bs);
+        }
+
         public bool InsertBuySell(BuyAndSell bs)
         {
             int value = _connection.Insert(bs);

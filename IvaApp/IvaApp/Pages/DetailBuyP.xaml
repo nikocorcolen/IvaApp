@@ -3,60 +3,67 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.DetailBuyP">
   <ScrollView>
-    <StackLayout Padding="50" Spacing="10">
-      
-        <Label Text="Producto:"
-             FontSize="Medium"
-             TextColor="White"/>
-        <Label x:Name="productName"
-               Text=""
-               FontSize="Small"
-               TextColor="White"/>
-      
-      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+    <StackLayout Padding="15" Spacing="10">
 
-        <Label Text="Factura o Boleta:"
-             FontSize="Medium"
+      <Label Text="Producto:"
+           FontSize="Medium"
+           TextColor="White"/>
+      <Label x:Name="productName"
+             Text=""
+             FontSize="Small"
              TextColor="White"/>
-        <Label x:Name="factura"
-               Text=""
-               FontSize="Small"
-               TextColor="White"/>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
-      
-        <Label Text="Fecha:"
-             FontSize="Medium"
+
+      <Label Text="Factura o Boleta:"
+           FontSize="Medium"
+           TextColor="White"/>
+      <Label x:Name="factura"
+             Text=""
+             FontSize="Small"
              TextColor="White"/>
-        <Label x:Name="dateProduct"
-               Text=""
-               FontSize="Small"
-               TextColor="White"/>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
-        
-        <Label Text="NETO:"
-             FontSize="Medium"
+
+      <Label Text="Fecha:"
+           FontSize="Medium"
+           TextColor="White"/>
+      <Label x:Name="dateProduct"
+             Text=""
+             FontSize="Small"
              TextColor="White"/>
-        <Label x:Name="neto"
-               Text=""
-               FontSize="Small"
-               TextColor="White"/>
-        <Label Text="19% IVA:"
-             FontSize="Medium"
+
+      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+
+      <Label Text="NETO:"
+           FontSize="Medium"
+           TextColor="White"/>
+      <Label x:Name="neto"
+             Text=""
+             FontSize="Small"
              TextColor="White"/>
-        <Label x:Name="iva"
-               Text=""
-               FontSize="Small"
-               TextColor="White"/>
-        <Label Text="TOTAL:"
-             FontSize="Medium"
+      <Label Text="19% IVA:"
+           FontSize="Medium"
+           TextColor="White"/>
+      <Label x:Name="iva"
+             Text=""
+             FontSize="Small"
              TextColor="White"/>
-        <Label x:Name="total"
-               Text=""
-               FontSize="Small"
-               TextColor="White"/>
-      
+      <Label Text="TOTAL:"
+           FontSize="Medium"
+           TextColor="White"/>
+      <Label x:Name="total"
+             Text=""
+             FontSize="Small"
+             TextColor="White"/>
+
+      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+
+      <Button x:Name="eliminarButton"
+              Text="Eliminar"
+              TextColor="White"
+              BackgroundColor="#77D065"/>
+
     </StackLayout>
   </ScrollView>
 </ContentPage>

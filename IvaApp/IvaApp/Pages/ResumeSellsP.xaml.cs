@@ -17,16 +17,21 @@ namespace IvaApp.Pages
 
             string monthName = Utilities.GetMonthName(DateTime.Now);
             int year = DateTime.Now.Year;
+            desdeDate.Date = Utilities.GetStartMonth();
+            hastaDate.Date = Utilities.GetFinishMonth();
 
-            TituloResumen.Text = "Ventas " + monthName + " de " + year;
-
-            toolBar();
+            //toolBar();
             using (var database = new BuyAndSellDatabase())
             {
                 sellListView.ItemsSource = database.GetSells(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
             }
-
+            nuevo.Clicked += nuevo_Clicked;
             sellListView.ItemSelected += sellListView_ItemSelected;
+        }
+
+        void nuevo_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new RegistrySellP());
         }
 
         void sellListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
