@@ -19,4 +19,7 @@ public final class R {
         public static final int ApplicationName=0x7f030001;
         public static final int Hello=0x7f030000;
     }
+    public static final class style {
+        public static final int CustomTheme=0x7f040000;
+    }
 }
