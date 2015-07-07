@@ -59,6 +59,7 @@ C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Platfor
 C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\obj\Debug\IvaApp.csprojResolveAssemblyReference.cache
 C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\obj\Debug\MainPage.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\obj\Debug\BuyAndSellP.xaml.g.cs
 C:\Users\Nicolas\Documents\IvaApp1\IvaApp\IvaApp\obj\Debug\DetailBuyP.xaml.g.cs

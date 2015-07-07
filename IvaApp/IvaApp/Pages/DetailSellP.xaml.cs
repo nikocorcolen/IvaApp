@@ -10,19 +10,32 @@ namespace IvaApp.Pages
 {
     public partial class DetailSellP : ContentPage
     {
+        private BuyAndSell bsGlobal;
         public DetailSellP(BuyAndSell bs)
         {
             InitializeComponent();
+            bsGlobal = bs;
             Title = "Detalle";
-            productName.Text = bs.ProductName;
-            factura.Text = bs.Factura.ToString();
-            dateProduct.Text = bs.Date.Month + "/" + bs.Date.Day + "/" + bs.Date.Year;
+            productName.Text = bsGlobal.ProductName;
+            factura.Text = bsGlobal.Factura.ToString();
+            dateProduct.Text = bsGlobal.Date.Month + "/" + bsGlobal.Date.Day + "/" + bsGlobal.Date.Year;
 
-            double t = bs.Price;
+            double t = bsGlobal.Price;
 
             neto.Text = Utilities.GetNeto(t);
             iva.Text = Utilities.GetIva(t);
             total.Text = Utilities.GetTotal(t);
+
+            eliminarButton.Clicked += eliminarButton_Clicked;
+        }
+
+        void eliminarButton_Clicked(object sender, EventArgs e)
+        {
+            using (var database = new BuyAndSellDatabase())
+            {
+                database.DeleteBuyAndSell(bsGlobal);
+                this.Navigation.PushAsync(new ResumeSellsP());
+            }
         }
     }
 }

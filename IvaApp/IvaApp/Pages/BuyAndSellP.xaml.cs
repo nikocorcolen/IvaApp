@@ -16,7 +16,7 @@ namespace IvaApp.Pages
         {
             InitializeComponent();
             Title = "Compra y Venta";
-            toolBar();
+            //toolBar();
             using(var databse = new BuyAndSellDatabase())
             {
                 string[] temp = databse.GetIvaMes(Utilities.GetStartMonth(), Utilities.GetFinishMonth()).Split('+');
@@ -76,7 +76,7 @@ namespace IvaApp.Pages
             await DisplayAlert("Aviso", "Simular compras", "Aceptar");
             using (var database = new BuyAndSellDatabase())
             {
-                List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
+                List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth(), Utilities.usuario);
                 DependencyService.Get<ISave>().SaveText(a);
             }
             using (var database1 = new UserDatabase())

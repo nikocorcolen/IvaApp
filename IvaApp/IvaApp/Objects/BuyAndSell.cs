@@ -16,6 +16,7 @@ namespace IvaApp
         public Boolean isBuy { get; set; }
         public string ProductName { get; set; }
         public int Factura { get; set; }
+        public string Usuario { get; set; }
 
         public BuyAndSell()
         {
@@ -23,7 +24,7 @@ namespace IvaApp
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2} {3} {4}", ProductName, Price, ID, Date, Factura);
+            return string.Format("{0} {1} {2} {3} {4} {5}", ProductName, Price, ID, Date, Factura, Usuario);
         }
     }
 }
