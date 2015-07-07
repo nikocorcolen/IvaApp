@@ -12,7 +12,7 @@ namespace IvaApp.Droid
     //[Activity(Label = "IvaApp", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 
     [Activity(
-        Label = "HiddenActivityIconDemo",
+        Label = "Iva App",
         Icon = "@drawable/icon",
         MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
