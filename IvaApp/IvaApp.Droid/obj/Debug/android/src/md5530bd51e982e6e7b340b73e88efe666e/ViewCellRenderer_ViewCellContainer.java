@@ -11,6 +11,7 @@ public class ViewCellRenderer_ViewCellContainer
 		__md_methods = 
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
+			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.ViewCellRenderer/ViewCellContainer, Xamarin.Forms.Platform.Android, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null", ViewCellRenderer_ViewCellContainer.class, __md_methods);
 	}
@@ -62,6 +63,14 @@ public class ViewCellRenderer_ViewCellContainer
 	}
 
 	private native void n_onMeasure (int p0, int p1);
+
+
+	public boolean onInterceptTouchEvent (android.view.MotionEvent p0)
+	{
+		return n_onInterceptTouchEvent (p0);
+	}
+
+	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

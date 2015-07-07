@@ -4,26 +4,18 @@
              x:Class="IvaApp.Pages.BuyAndSellP">
   <ScrollView>
     <StackLayout Padding="40" Spacing="20">
-      <Button x:Name="registryBuyButton"
-              Text="Registrar comrpa"
+      <Button x:Name="resumeBuyButton"
+              Text="Compras"
               TextColor="White"
               BackgroundColor="#77D065"/>
-      <Button x:Name="registrySellButton"
-              Text="Registrar venta"
+      <Button x:Name="resumeSellButton"
+              Text="Ventas"
               TextColor="White"
               BackgroundColor="#77D065"/>
-      <Button x:Name="simulateBuyButton"
-              Text="Simular"
+      <Button x:Name="detailIvaButton"
+              Text="Iva"
               TextColor="White"
               BackgroundColor="#77D065"/>
-      <StackLayout Padding="50">
-        <Button x:Name="ivaLabel"
-             Text=""
-             FontSize="Medium"
-             HorizontalOptions="Center"
-             TextColor="White"
-             BackgroundColor="Transparent"/>
-      </StackLayout>
     </StackLayout>
   </ScrollView>
 </ContentPage>

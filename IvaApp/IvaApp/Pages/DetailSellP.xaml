@@ -57,13 +57,6 @@
              FontSize="Small"
              TextColor="White"/>
 
-      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
-
-      <Button x:Name="eliminarButton"
-              Text="Eliminar"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
-
     </StackLayout>
   </ScrollView>
 </ContentPage>

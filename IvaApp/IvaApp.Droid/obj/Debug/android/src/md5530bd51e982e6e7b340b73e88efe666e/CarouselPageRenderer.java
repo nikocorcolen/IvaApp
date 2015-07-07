@@ -12,6 +12,7 @@ public class CarouselPageRenderer
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onAttachedToWindow:()V:GetOnAttachedToWindowHandler\n" +
+			"n_onDetachedFromWindow:()V:GetOnDetachedFromWindowHandler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.CarouselPageRenderer, Xamarin.Forms.Platform.Android, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null", CarouselPageRenderer.class, __md_methods);
 	}
@@ -63,6 +64,14 @@ public class CarouselPageRenderer
 	}
 
 	private native void n_onAttachedToWindow ();
+
+
+	public void onDetachedFromWindow ()
+	{
+		n_onDetachedFromWindow ();
+	}
+
+	private native void n_onDetachedFromWindow ();
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

@@ -14,6 +14,7 @@ public class ListViewAdapter
 			"n_getItem:(I)Ljava/lang/Object;:GetGetItem_IHandler\n" +
 			"n_hasStableIds:()Z:GetHasStableIdsHandler\n" +
 			"n_getItemId:(I)J:GetGetItemId_IHandler\n" +
+			"n_areAllItemsEnabled:()Z:GetAreAllItemsEnabledHandler\n" +
 			"n_isEnabled:(I)Z:GetIsEnabled_IHandler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.ListViewAdapter, Xamarin.Forms.Platform.Android, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null", ListViewAdapter.class, __md_methods);
@@ -73,6 +74,14 @@ public class ListViewAdapter
 	}
 
 	private native long n_getItemId (int p0);
+
+
+	public boolean areAllItemsEnabled ()
+	{
+		return n_areAllItemsEnabled ();
+	}
+
+	private native boolean n_areAllItemsEnabled ();
 
 
 	public boolean isEnabled (int p0)

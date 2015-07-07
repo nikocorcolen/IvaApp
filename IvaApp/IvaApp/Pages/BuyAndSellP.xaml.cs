@@ -10,39 +10,16 @@ namespace IvaApp.Pages
 {
     public partial class BuyAndSellP : ContentPage
     {
-        private static string textIva = "IVA del mes: ";
 
         public BuyAndSellP()
         {
             InitializeComponent();
             Title = "Compra y Venta";
-            //toolBar();
-            using(var databse = new BuyAndSellDatabase())
-            {
-                string[] temp = databse.GetIvaMes(Utilities.GetStartMonth(), Utilities.GetFinishMonth()).Split('+');
-                double credito = Double.Parse(temp[0]);
-                double debito = Double.Parse(temp[1]);
+            toolBar();
 
-                if (debito - credito < 0)
-                {
-                    ivaLabel.TextColor = Color.Green;
-                }
-                else if (debito - credito > 0)
-                {
-                    ivaLabel.TextColor = Color.Red;
-                }
-                else
-                {
-                    ivaLabel.TextColor = Color.White;
-                }
-
-                ivaLabel.Text = textIva + Utilities.GetIva(debito - credito);
-            }
-
-            registryBuyButton.Clicked += registryBuyButton_Clicked;
-            registrySellButton.Clicked += registrySellButton_Clicked;
-            simulateBuyButton.Clicked += simulateBuyButton_Clicked;
-            ivaLabel.Clicked += ivaLabel_Clicked;
+            resumeBuyButton.Clicked += registryBuyButton_Clicked;
+            resumeSellButton.Clicked += registrySellButton_Clicked;
+            detailIvaButton.Clicked += detailIvaButton_Clicked;
         }
 
         private void toolBar()
@@ -76,7 +53,7 @@ namespace IvaApp.Pages
             await DisplayAlert("Aviso", "Simular compras", "Aceptar");
             using (var database = new BuyAndSellDatabase())
             {
-                List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth(), Utilities.usuario);
+                List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
                 DependencyService.Get<ISave>().SaveText(a);
             }
             using (var database1 = new UserDatabase())
@@ -88,15 +65,15 @@ namespace IvaApp.Pages
 
         public async void registrySellButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistrySellP());
+            await Navigation.PushAsync(new ResumeBuysP());
         }
 
         public async void registryBuyButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistryBuyP());
+            await Navigation.PushAsync(new ResumeSellsP());
         }
 
-        public async void ivaLabel_Clicked(object sender, EventArgs e)
+        public async void detailIvaButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new DetailsIvaP());
         }

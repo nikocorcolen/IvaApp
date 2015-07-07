@@ -10,6 +10,7 @@ public class SliderRenderer
 	static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_onProgressChanged:(Landroid/widget/SeekBar;IZ)V:GetOnProgressChanged_Landroid_widget_SeekBar_IZHandler:Android.Widget.SeekBar/IOnSeekBarChangeListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_onStartTrackingTouch:(Landroid/widget/SeekBar;)V:GetOnStartTrackingTouch_Landroid_widget_SeekBar_Handler:Android.Widget.SeekBar/IOnSeekBarChangeListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_onStopTrackingTouch:(Landroid/widget/SeekBar;)V:GetOnStopTrackingTouch_Landroid_widget_SeekBar_Handler:Android.Widget.SeekBar/IOnSeekBarChangeListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
@@ -40,6 +41,14 @@ public class SliderRenderer
 		if (getClass () == SliderRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.SliderRenderer, Xamarin.Forms.Platform.Android, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
 	}
+
+
+	public void onLayout (boolean p0, int p1, int p2, int p3, int p4)
+	{
+		n_onLayout (p0, p1, p2, p3, p4);
+	}
+
+	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
 
 
 	public void onProgressChanged (android.widget.SeekBar p0, int p1, boolean p2)

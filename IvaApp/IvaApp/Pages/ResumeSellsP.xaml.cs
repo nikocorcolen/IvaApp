@@ -23,7 +23,7 @@ namespace IvaApp.Pages
             toolBar();
             using (var database = new BuyAndSellDatabase())
             {
-                sellListView.ItemsSource = database.GetSells(Utilities.GetStartMonth(), Utilities.GetFinishMonth(), Utilities.usuario);
+                sellListView.ItemsSource = database.GetSells(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
             }
 
             sellListView.ItemSelected += sellListView_ItemSelected;

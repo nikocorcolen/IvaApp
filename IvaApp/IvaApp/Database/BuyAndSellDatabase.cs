@@ -18,11 +18,6 @@ namespace IvaApp
             _connection.CreateTable<BuyAndSell>();
         }
 
-        public void DeleteBuyAndSell(BuyAndSell bs)
-        {
-            _connection.Delete(bs);
-        }
-
         public bool InsertBuySell(BuyAndSell bs)
         {
             int value = _connection.Insert(bs);
@@ -49,14 +44,14 @@ namespace IvaApp
                 //OrderBy(bs => bs.Date).ToList();
         }
 
-        public List<BuyAndSell> GetBuys(DateTime start, DateTime finish, String usuario)
+        public List<BuyAndSell> GetBuys(DateTime start, DateTime finish)
         {
-            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).Where(u => u.Usuario == usuario).OrderBy(bs => bs.Date).ToList();
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 
-        public List<BuyAndSell> GetSells(DateTime start, DateTime finish, String usuario)
+        public List<BuyAndSell> GetSells(DateTime start, DateTime finish)
         {
-            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.Date >= start && bs.Date <= finish).Where(u => u.Usuario == usuario).OrderBy(bs => bs.Date).ToList();
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 
         public string GetIvaMes(DateTime start, DateTime finish) 

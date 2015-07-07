@@ -14,6 +14,7 @@ public class ScrollViewRenderer
 			"n_onScrollChanged:(IIII)V:GetOnScrollChanged_IIIIHandler\n" +
 			"n_onAttachedToWindow:()V:GetOnAttachedToWindowHandler\n" +
 			"n_onDetachedFromWindow:()V:GetOnDetachedFromWindowHandler\n" +
+			"n_draw:(Landroid/graphics/Canvas;)V:GetDraw_Landroid_graphics_Canvas_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.ScrollViewRenderer, Xamarin.Forms.Platform.Android, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null", ScrollViewRenderer.class, __md_methods);
 	}
@@ -89,6 +90,14 @@ public class ScrollViewRenderer
 	}
 
 	private native void n_onDetachedFromWindow ();
+
+
+	public void draw (android.graphics.Canvas p0)
+	{
+		n_draw (p0);
+	}
+
+	private native void n_draw (android.graphics.Canvas p0);
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

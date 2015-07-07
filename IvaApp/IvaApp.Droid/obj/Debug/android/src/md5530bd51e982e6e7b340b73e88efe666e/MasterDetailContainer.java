@@ -10,6 +10,7 @@ public class MasterDetailContainer
 	static {
 		__md_methods = 
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
+			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.MasterDetailContainer, Xamarin.Forms.Platform.Android, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null", MasterDetailContainer.class, __md_methods);
 	}
@@ -53,6 +54,14 @@ public class MasterDetailContainer
 	}
 
 	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
+
+
+	public boolean onInterceptTouchEvent (android.view.MotionEvent p0)
+	{
+		return n_onInterceptTouchEvent (p0);
+	}
+
+	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

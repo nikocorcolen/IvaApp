@@ -58,16 +58,11 @@ namespace IvaApp.Pages
                     Date = dateEntry.Date,
                     isBuy = false,
                     ProductName = nameEntry.Text,
-                    Factura = facturaTemp,
-                    Usuario = Utilities.usuario
+                    Factura = facturaTemp
                 };
                 using (var databse = new BuyAndSellDatabase())
                 {
                     databse.InsertBuySell(bs);
-                    //Limpia los campos
-                    facturaEntry.Text = "";
-                    priceEntry.Text = "";
-                    nameEntry.Text = "";
                     await Navigation.PushAsync(new BuyAndSellP());
                 }
             }

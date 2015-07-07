@@ -81,10 +81,6 @@ namespace IvaApp.Pages
                         await DisplayAlert("Error", "Usuario creado incorrectamente", "Aceptar");
                     }
                 }
-                //Limapia los campos
-                userEntry.Text = "";
-                passwordEntry.Text = "";
-                mailEntry.Text = "";
                 //Return to the MainPage
                 await Navigation.PushAsync(new MainPage());
             }

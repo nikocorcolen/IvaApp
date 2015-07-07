@@ -28,8 +28,6 @@ namespace IvaApp.Pages {
         
         private Label total;
         
-        private Button eliminarButton;
-        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(DetailSellP));
             productName = this.FindByName<Label>("productName");
@@ -38,7 +36,6 @@ namespace IvaApp.Pages {
             neto = this.FindByName<Label>("neto");
             iva = this.FindByName<Label>("iva");
             total = this.FindByName<Label>("total");
-            eliminarButton = this.FindByName<Button>("eliminarButton");
         }
     }
 }

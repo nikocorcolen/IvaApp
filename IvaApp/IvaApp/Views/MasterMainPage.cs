@@ -87,6 +87,7 @@ namespace IvaApp
                 };
 
             listView.SelectedItem = opciones[0];
+            Master.Icon = "slideout.png";
             
         }
 
