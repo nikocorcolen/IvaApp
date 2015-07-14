@@ -22,7 +22,7 @@ namespace IvaApp.Droid
 {
     class Email : IEmail
     {
-        public void Send_Email(string correo)
+        public void Send_Email(string correo, string tipo)
         {
             //SmtpClient client = new SmtpClient();
             //string From = "";
@@ -41,8 +41,16 @@ namespace IvaApp.Droid
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
                 mail.From = new MailAddress(user);
                 mail.To.Add(user);
-                mail.Subject = "TEST";
-                mail.Body = "This is for testing SMTP mail from GMAIL";
+                if (tipo.Equals("venta"))
+                {
+                    mail.Subject = "Ventas";
+                    mail.Body = "Resporte de ventas";
+                }
+                else
+                {
+                    mail.Subject = "Compras";
+                    mail.Body = "Resporte de compras";
+                }
 
                 //***************
                 var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);

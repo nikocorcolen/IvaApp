@@ -57,7 +57,7 @@ namespace IvaApp.Pages
                     Price = Double.Parse(priceEntry.Text),
                     Date = dateEntry.Date,
                     isBuy = false,
-                    ProductName = nameEntry.Text,
+                    ProductName = nameEntry.Text.Replace("\n", ""),
                     Factura = facturaTemp
                 };
                 using (var databse = new BuyAndSellDatabase())

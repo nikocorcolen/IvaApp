@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Globalization;
 
 using Android.App;
 using Android.Content;
@@ -18,6 +19,7 @@ namespace IvaApp.Droid
 {
     class Save : ISave
     {
+        private CultureInfo ci = new CultureInfo("es-CL");
         public void SaveText(List<BuyAndSell> list)
         {
             string filename = "temp.csv";
@@ -29,6 +31,7 @@ namespace IvaApp.Droid
             //Split(" ")
             //0 = nombre; 1 = total; 3 = fecha; 6 = factura
 
+            builder.AppendLine(string.Join(";", "Nombre", "Monto Total", "Fecha", "Numero de Factura"));
             for (int i = 0; i < list.Count; i++) // Loop through List with for
             {
                 String[] temp = list[i].ToString().Split(' ');
@@ -39,7 +42,10 @@ namespace IvaApp.Droid
                 {
                     nombre += temp[j] + " ";
                 }
-                builder.AppendLine(string.Join(";", nombre, temp[temp.Length - 6], temp[temp.Length - 4], temp[temp.Length - 1]));
+                string monto =  Convert.ToDouble(temp[temp.Length - 6]).ToString("C", ci);
+                string factura = Convert.ToDouble(temp[temp.Length - 1]).ToString("C", ci);
+                string fecha = Convert.ToDateTime(temp[temp.Length - 4]).ToString("dd/MM/yyyy");
+                builder.AppendLine(string.Join(";", nombre, monto, fecha , factura));
             }
 
             try

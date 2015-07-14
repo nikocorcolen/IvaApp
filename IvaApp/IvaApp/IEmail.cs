@@ -8,6 +8,6 @@ namespace IvaApp
 {
     public interface IEmail
     {
-        void Send_Email(String correo);
+        void Send_Email(String correo, String tipo);
     }
 }
