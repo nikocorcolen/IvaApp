@@ -3,15 +3,57 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.Reportes">
   <ScrollView>
-    <StackLayout Padding="40" Spacing="20">
-      <Button x:Name="comprasMensuales"
-              Text="Compras mensuales"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
-      <Button x:Name="ventasMensuales"
-              Text="Ventas mensuales"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
+    <StackLayout Padding="0" Spacing="0">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Desde"
+               Text="Del:"
+               TextColor="White"
+               FontSize="Medium"
+               Grid.Row="0"
+               Grid.Column="0"
+               VerticalOptions="Center"/>
+        <DatePicker x:Name="desdeDate"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start">
+          <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
+        </DatePicker>
+        <Label x:Name="Hasta"
+               Text="Al:"
+               TextColor="White"
+               FontSize="Medium"
+               Grid.Row="0"
+               Grid.Column="2"
+               VerticalOptions="Center"/>
+        <DatePicker x:Name="hastaDate"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start">
+          <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
+        </DatePicker>
+      </Grid>
+
+      <StackLayout Padding="70" Spacing="20">
+        <Button x:Name="comprasMensuales"
+                Text="Compras"
+                TextColor="White"
+                BackgroundColor="#77D065"/>
+        <Button x:Name="ventasMensuales"
+                Text="Ventas"
+                TextColor="White"
+                BackgroundColor="#77D065"/>
+      </StackLayout>
     </StackLayout>
   </ScrollView>
 </ContentPage>

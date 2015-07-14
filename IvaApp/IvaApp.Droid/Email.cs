@@ -32,24 +32,24 @@ namespace IvaApp.Droid
             //client.EnableSsl = true;//For Gmail
             //From = "nikocorcolen@gmail.com";
             //PassEmail = "nikoC0rc0l3n";
-            string user = "nikocorcolen@gmail.com";
-            string pass = "nikoC0rc0l3n";
+            string user = "iva.app.reportes@gmail.com";
+            string pass = "ivaapp2015";
 
             try
             {
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
                 mail.From = new MailAddress(user);
-                mail.To.Add(user);
+                mail.To.Add(correo);
                 if (tipo.Equals("venta"))
                 {
                     mail.Subject = "Ventas";
-                    mail.Body = "Resporte de ventas";
+                    mail.Body = "Reporte de ventas";
                 }
                 else
                 {
                     mail.Subject = "Compras";
-                    mail.Body = "Resporte de compras";
+                    mail.Body = "Reporte de compras";
                 }
 
                 //***************
@@ -61,7 +61,7 @@ namespace IvaApp.Droid
                 Attachment item = new Attachment(filePath);
                 mail.Attachments.Add(item);
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("nikocorcolen", pass);
+                SmtpServer.Credentials = new System.Net.NetworkCredential("iva.app.reportes", pass);
                 SmtpServer.EnableSsl = true;
                 ServicePointManager.ServerCertificateValidationCallback = delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { return true; };
                 SmtpServer.Send(mail);
