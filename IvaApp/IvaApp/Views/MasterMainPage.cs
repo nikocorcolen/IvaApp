@@ -24,8 +24,7 @@ namespace IvaApp
             Aplicacion[] opciones = 
             {
                 new Aplicacion("Inicio"),
-                new Aplicacion("Simular Compra"),
-                new Aplicacion("Simular Venta"),
+                new Aplicacion("Simular"),
                 new Aplicacion("Salir")
             };
 
@@ -76,6 +75,7 @@ namespace IvaApp
                     switch (item.Nombre)
                     {
                         case "Inicio": detalle = new NavigationPage(new BuyAndSellP()); break;
+                        case "Simular": detalle = new NavigationPage(new SimulateBuyAndSell()); break;
                         case "Salir": logout_session(); break;
                     }
 

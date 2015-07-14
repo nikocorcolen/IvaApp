@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvaApp.Pages.SimulateBuyAndSell">
+  <ScrollView>
+    <StackLayout Padding="50" Spacing="10">
+      <Entry x:Name="valorCompraEntry"
+             Placeholder="Valor de Compra"
+             Keyboard="Numeric"
+             TextColor="White"/>
+      <Entry x:Name="valorVentaEntry"
+             Placeholder="Valor de Venta"
+             Keyboard="Numeric"
+             TextColor="White"/>
+      <Label x:Name="valorIvaActual"
+             Text=""
+             Font="24"
+             HorizontalOptions="Center"
+             TextColor="White"/>
+    </StackLayout>
+  </ScrollView>
+
+</ContentPage>
