@@ -38,7 +38,7 @@ namespace IvaApp.Pages
 
         }
 
-        public void valorEntry_TextChanged(object sender, TextChangedEventArgs e)
+        void valorEntry_TextChanged(object sender, TextChangedEventArgs e)
         {
             double valorVenta;
             double valorCompra;

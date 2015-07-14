@@ -25,6 +25,7 @@ namespace IvaApp
             {
                 new Aplicacion("Inicio"),
                 new Aplicacion("Simular"),
+                new Aplicacion("Reportes"),
                 new Aplicacion("Salir")
             };
 
@@ -76,6 +77,7 @@ namespace IvaApp
                     {
                         case "Inicio": detalle = new NavigationPage(new BuyAndSellP()); break;
                         case "Simular": detalle = new NavigationPage(new SimulateBuyAndSell()); break;
+                        case "Reportes": detalle = new NavigationPage(new Reportes()); break;
                         case "Salir": logout_session(); break;
                     }
 
