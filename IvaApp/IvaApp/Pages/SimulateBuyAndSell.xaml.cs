@@ -33,17 +33,16 @@ namespace IvaApp.Pages
             }
             valorIvaActual.Text = textIva + Utilities.GetIva(ivaActual);
 
-            valorVentaEntry.TextChanged += valorEntry_TextChanged;
-            valorCompraEntry.TextChanged += valorEntry_TextChanged;
+            buttonActualizar.Clicked += buttonActualizar_Clicked;
 
         }
 
-        void valorEntry_TextChanged(object sender, TextChangedEventArgs e)
+        void buttonActualizar_Clicked(object sender, EventArgs e)
         {
             double valorVenta;
             double valorCompra;
 
-            if (valorVentaEntry.Text == "")
+            if (String.IsNullOrEmpty(valorVentaEntry.Text))
             {
                 valorVenta = 0;
             }
@@ -52,7 +51,7 @@ namespace IvaApp.Pages
                 valorVenta = double.Parse(valorVentaEntry.Text);
             }
 
-            if (valorCompraEntry.Text == "")
+            if (String.IsNullOrEmpty(valorCompraEntry.Text))
             {
                 valorCompra = 0;
             }
@@ -61,7 +60,7 @@ namespace IvaApp.Pages
                 valorCompra = double.Parse(valorCompraEntry.Text);
             }
 
-            ivaParcial = ivaActual - valorVenta + valorCompra;
+            ivaParcial = ivaActual + valorVenta - valorCompra;
             valorIvaActual.Text = textIva + Utilities.GetIva(ivaParcial);
         }
     }

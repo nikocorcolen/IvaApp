@@ -1,17 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WorkingWithBehaviors;assembly=WorkingWithBehaviors"
              x:Class="IvaApp.Pages.SimulateBuyAndSell">
   <ScrollView>
     <StackLayout Padding="50" Spacing="10">
       <Entry x:Name="valorCompraEntry"
              Placeholder="Valor de Compra"
              Keyboard="Numeric"
-             TextColor="White"/>
+             TextColor="White">
+      </Entry>
       <Entry x:Name="valorVentaEntry"
              Placeholder="Valor de Venta"
              Keyboard="Numeric"
-             TextColor="White"/>
+             TextColor="White">
+      </Entry>
+      <Button x:Name="buttonActualizar"
+              Text="Simular Iva"
+              TextColor="White">
+      </Button>
       <Label x:Name="valorIvaActual"
              Text=""
              Font="24"
