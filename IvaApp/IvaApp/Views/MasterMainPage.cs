@@ -6,12 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace IvaApp
 {
     class MasterMainPage : MasterDetailPage
     {
         public MasterMainPage()
         {
+
             Label header = new Label
             {
                 Text = "Menú",
@@ -22,8 +24,6 @@ namespace IvaApp
             Aplicacion[] opciones = 
             {
                 new Aplicacion("Inicio"),
-                new Aplicacion("Registrar Compra"),
-                new Aplicacion("Registrar Venta"),
                 new Aplicacion("Simular Compra"),
                 new Aplicacion("Simular Venta"),
                 new Aplicacion("Salir")
@@ -76,8 +76,6 @@ namespace IvaApp
                     switch (item.Nombre)
                     {
                         case "Inicio": detalle = new NavigationPage(new BuyAndSellP()); break;
-                        case "Registrar Compra": detalle = new NavigationPage(new RegistryBuyP()); break;
-                        case "Registrar Venta": detalle = new NavigationPage(new RegistrySellP()); break;
                         case "Salir": logout_session(); break;
                     }
 

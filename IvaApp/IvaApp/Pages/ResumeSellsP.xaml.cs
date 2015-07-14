@@ -29,15 +29,17 @@ namespace IvaApp.Pages
             sellListView.ItemSelected += sellListView_ItemSelected;
         }
 
-        void nuevo_Clicked(object sender, EventArgs e)
+        public async void nuevo_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new RegistrySellP());
+            await Navigation.PushAsync(new RegistrySellP());
+            Navigation.RemovePage(this);
         }
 
-        void sellListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        public async void sellListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             BuyAndSell bs = (BuyAndSell)e.SelectedItem;
-            this.Navigation.PushAsync(new DetailSellP(bs));
+            await Navigation.PushAsync(new DetailSellP(bs));
+            Navigation.RemovePage(this);
         }
 
 

@@ -29,12 +29,13 @@ namespace IvaApp.Pages
             eliminarButton.Clicked += eliminarButton_Clicked;
         }
 
-        void eliminarButton_Clicked(object sender, EventArgs e)
+        public async void eliminarButton_Clicked(object sender, EventArgs e)
         {
             using (var database = new BuyAndSellDatabase())
             {
                 database.DeleteBuyAndSell(bsGlobal);
-                this.Navigation.PushAsync(new ResumeSellsP());
+                await Navigation.PushAsync(new ResumeSellsP());
+                Navigation.RemovePage(this);
             }
         }
     }

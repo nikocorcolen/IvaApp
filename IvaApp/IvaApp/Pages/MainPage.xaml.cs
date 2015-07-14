@@ -13,7 +13,7 @@ namespace IvaApp
         public MainPage()
         {
             InitializeComponent();
-            Title = "App";
+            Title = "Bienvenido a Iva App";
             //toolBar();
 
             signinButton.Clicked += signinButton_Clicked;
@@ -68,6 +68,7 @@ namespace IvaApp
                         //limpia los campos
                         userEntry.Text = "";
                         passwordEntry.Text = "";
+
                         await Navigation.PushModalAsync(new MasterMainPage());
                     }
                 }

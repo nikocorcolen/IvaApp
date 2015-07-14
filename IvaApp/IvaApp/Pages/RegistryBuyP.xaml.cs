@@ -67,7 +67,8 @@ namespace IvaApp.Pages
                     facturaEntry.Text = "";
                     nameEntry.Text = "";
                     priceEntry.Text = "";
-                    await Navigation.PushAsync(new BuyAndSellP());
+                    await Navigation.PushAsync(new ResumeBuysP());
+                    Navigation.RemovePage(this);
                 }
             }
         }
