@@ -36,7 +36,7 @@ namespace IvaApp.Pages
             {
                 database.DeleteBuyAndSell(bsGlobal);
                 await Navigation.PushAsync(new ResumeBuysP());
-                Navigation.RemovePage(this);
+                //Navigation.RemovePage(this);
 
             }
         }

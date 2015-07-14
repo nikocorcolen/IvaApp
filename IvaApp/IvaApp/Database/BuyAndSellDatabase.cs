@@ -51,6 +51,8 @@ namespace IvaApp
 
         public List<BuyAndSell> GetBuys(DateTime start, DateTime finish)
         {
+            //start = new DateTime(start.Year, start.Month, start.Day);
+            //finish = new DateTime(finish.Year, finish.Month, finish.Day);
             return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 

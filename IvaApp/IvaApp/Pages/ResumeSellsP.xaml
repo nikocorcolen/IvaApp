@@ -4,21 +4,54 @@
              x:Class="IvaApp.Pages.ResumeSellsP">
   <ScrollView>
     <StackLayout Padding="0" Spacing="0">
-      <StackLayout Orientation="Horizontal">
-        <Label x:Name="De"
-             Text="Desde"
-             TextColor="White"
-             FontSize="Medium"/>
-        <DatePicker x:Name="desdeDate"/>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Desde"
+               Text="Del:"
+               TextColor="White"
+               FontSize="Medium"
+               Grid.Row="0"
+               Grid.Column="0"
+               VerticalOptions="Center"/>
+        <DatePicker x:Name="desdeDate"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start">
+          <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
+        </DatePicker>
         <Label x:Name="Hasta"
-             Text="A"
-             TextColor="White"
-             FontSize="Medium"/>
-        <DatePicker x:Name="hastaDate"/>
+               Text="Al:"
+               TextColor="White"
+               FontSize="Medium"
+               Grid.Row="0"
+               Grid.Column="2"
+               VerticalOptions="Center"/>
+        <DatePicker x:Name="hastaDate"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start">
+          <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
+        </DatePicker>
         <Button x:Name="actualizar"
-              Image="slideout.png"
-              HorizontalOptions="End"/>
-      </StackLayout>
+                Image="slideout.png"
+                HorizontalOptions="End"
+                Grid.Row="0"
+                Grid.Column="4"
+                BackgroundColor="#77D065"/>
+      </Grid>
+      
       <ListView x:Name="sellListView">
         <ListView.ItemTemplate>
           <DataTemplate>
