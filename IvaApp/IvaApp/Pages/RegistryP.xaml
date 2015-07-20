@@ -2,27 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.RegistryP">
-  <ScrollView>
-    <StackLayout Padding="10" Spacing="10">
-      <Label Text="Registro"
-             Font="24"
-             HorizontalOptions="Center"
-             TextColor="White"/>
+  <ScrollView BackgroundColor="White">
+    <StackLayout Padding="20" Spacing="10">
       <Entry x:Name="userEntry"
-             Placeholder="Usuario"
-             TextColor="White"/>
+             Placeholder="Nombre de usuario"
+             BackgroundColor="#ececec"
+             TextColor="Black"/>
       <Entry x:Name="passwordEntry"
              Placeholder="Contraseña"
+             BackgroundColor="#ececec"
              IsPassword="true"
-             TextColor="White"/>
+             TextColor="Black"/>
       <Entry x:Name="mailEntry"
-             Placeholder="Correo"
+             Placeholder="Correo electrónico"
+             BackgroundColor="#ececec"
              Keyboard="Email"
-             TextColor="White"/>
+             TextColor="Black"/>
       <Button x:Name="registryButton"
-              Text="Crear"
+              Text="Aceptar Registro"
               TextColor="White"
-              BackgroundColor="#77D065"/>
+              BorderRadius="0"
+              BackgroundColor="#fd7d00"/>
     </StackLayout>
   </ScrollView>
 </ContentPage>

@@ -4,15 +4,30 @@
              x:Class="IvaApp.Pages.BuyAndSellP">
   <ScrollView>
     <StackLayout Padding="40" Spacing="20">
-      <Button x:Name="resumeBuyButton"
-              Text="Compras"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
-      <Button x:Name="resumeSellButton"
-              Text="Ventas"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
+      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="resumeBuyButton"
+                Grid.Row="0" Grid.Column="0"
+                Text="Compras"
+                TextColor="White"
+                BackgroundColor="#77D065"/>
+        <Button x:Name="resumeSellButton"
+                Grid.Row="0" Grid.Column="1"
+                Text="Ventas"
+                TextColor="White"
+                BackgroundColor="#77D065"/>
+      </Grid>
       <Button x:Name="detailIvaButton"
+              HorizontalOptions="Center"
               Text="Iva"
               TextColor="White"
               BackgroundColor="#77D065"/>
