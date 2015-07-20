@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace IvaApp
 {
-    public interface INotification
+    public interface ILocalNotifications
     {
-        void Notification();
+        void SendLocalNotification(string title, string description, int iconID);
     }
 }

@@ -13,8 +13,16 @@ namespace IvaApp
 
         private static CultureInfo ci = new CultureInfo("es-CL");
 
+        public static string GetNextMonthName(DateTime date)
+        {
+            DateTime lastDayOfMonth = date.AddDays(1);
+            string month = lastDayOfMonth.ToString("MMMM", ci);
+            return month;
+        }
+
         public static string GetMonthName(DateTime date)
         {
+
             string month = date.ToString("MMMM", ci);
             return month;
         }
@@ -24,6 +32,7 @@ namespace IvaApp
             DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             return firstDayOfMonth;
         }
+
 
         public static DateTime GetFinishMonth()
         {
