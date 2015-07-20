@@ -136,6 +136,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\fondo.png" />
+    <Content Include="Imagenes\logoIvaApp.png" />
     <Content Include="Imagenes\slideout.png" />
     <Content Include="Imagenes\update.png" />
   </ItemGroup>

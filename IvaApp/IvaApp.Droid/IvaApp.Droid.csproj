@@ -110,7 +110,15 @@
     <AndroidResource Include="..\IvaApp\Imagenes\update.png">
       <Link>Resources\drawable\update.png</Link>
     </AndroidResource>
-    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="..\IvaApp\Imagenes\fondo.png">
+      <Link>Resources\drawable\fondo.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\IvaApp\Imagenes\logoIvaApp.png">
+      <Link>Resources\drawable\logoIvaApp.png</Link>
+    </AndroidResource>
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IvaApp\IvaApp.csproj">

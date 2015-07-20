@@ -13,7 +13,7 @@ namespace IvaApp.Pages
         public RegistryP()
         {
             InitializeComponent();
-            Title = "Crear Usuario";
+            Title = "Registrar Usuario";
             //toolBar();
             registryButton.Clicked += registryButton_Clicked;
         }

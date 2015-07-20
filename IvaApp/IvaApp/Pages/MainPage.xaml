@@ -2,27 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.MainPage">
-  <ScrollView>
+  <ScrollView BackgroundColor="White">
     <StackLayout Padding="10" Spacing="10">
-      <Label Text="Bienvenidos"
-             Font="24"
+      <Image Source="logoIvaApp.png"
              HorizontalOptions="Center"
-             TextColor="White"/>
-      <Entry x:Name="userEntry"
-             Placeholder="Usuario"
-             TextColor="White"/>
-      <Entry x:Name="passwordEntry"
-             Placeholder="Contraseña"
-             IsPassword="true"
-             TextColor="White"/>
-      <Button x:Name="signinButton"
-              Text="Ingresar"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
-      <Button x:Name="signupButton"
-              Text="Crear Usuario"
-              TextColor="White"
-              BackgroundColor="#77D065"/>
+             WidthRequest="250"/>
+      <Label Text="Maneja tu Pyme fácilmente"
+             Font="24"
+             TextColor="Gray"
+             HorizontalOptions="Center"/>
+      <StackLayout Padding="10">
+        <Entry x:Name="userEntry"
+                Placeholder="Nombre de usuario"
+                BackgroundColor="#ececec"
+                TextColor="Black"/>
+        <Entry x:Name="passwordEntry"
+                Placeholder="Contraseña"
+                BackgroundColor="#ececec"
+                IsPassword="true"
+                TextColor="Black"/>
+        <Button x:Name="signinButton"
+                Text="Iniciar Sesión"
+                Opacity="90"
+                TextColor="White"
+                BackgroundColor="#fd7d00"
+                BorderRadius="0"/>
+        <Button x:Name="signupButton"
+                Text="Registrarse"
+                TextColor="White"
+                BackgroundColor="#fd7d00"
+                BorderRadius="0"/>
+      </StackLayout>
     </StackLayout>
   </ScrollView>
 </ContentPage>
