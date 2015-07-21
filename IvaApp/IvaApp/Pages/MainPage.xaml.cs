@@ -1,4 +1,4 @@
-﻿using EdSnider.Plugins;
+﻿
 using IvaApp.Pages;
 using System;
 using System.Collections.Generic;

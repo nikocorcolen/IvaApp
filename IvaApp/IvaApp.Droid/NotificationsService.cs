@@ -11,43 +11,60 @@ using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
 using System.Threading;
-using EdSnider.Plugins;
 
 namespace IvaApp.Droid
 {
     [Service]
     public class NotificationsService : Service
     {
-        //Notifier.Current.Show("You've got mail", "You have 793 unread messages!");
         public override StartCommandResult OnStartCommand (Intent intent, StartCommandFlags flags, int startId)
         {
           // start a task here
           new Task (() => {
-            // long running code
               new Task(() =>
               {
                   while (true)
                   {
-                      if (DateTime.Now == Utilities.GetFinishMonth())
-                      {
-                          string title = "Hoy temina el mes de " + Utilities.GetMonthName(DateTime.Now);
-                          string contexto = "Desde mañana los registros se guardarán en el mes de " + Utilities.GetNextMonthName(DateTime.Now);
-                          Notification.Builder builder = new Notification.Builder(Android.App.Application.Context)
-                          .SetContentTitle(title)
-                          .SetContentText(contexto)
-                          .SetSmallIcon(Resource.Drawable.icon);
+                      //if (DateTime.Now.ToString("dd/MM/yyyy").Equals(Utilities.GetFinishMonth().ToString("dd/MM/yyyy")))
+                      //{
+                      //    string title = "Hoy temina el mes de " + Utilities.GetMonthName(DateTime.Now);
+                      //    string contexto = "Siguiente mes " + Utilities.GetNextMonthName(DateTime.Now);
+                      //    Notification.Builder builder = new Notification.Builder(Android.App.Application.Context)
+                      //    .SetContentTitle(title)
+                      //    .SetContentText(contexto)
+                      //    .SetSmallIcon(Resource.Drawable.logoIvaApp);
 
-                          // Build the notification:
-                          Notification notification = builder.Build();
+                      //    // Build the notification:
+                      //    Notification notification = builder.Build();
 
-                          // Get the notification manager:
-                          NotificationManager notificationManager =
-                              Android.App.Application.Context.GetSystemService(Context.NotificationService) as NotificationManager;
+                      //    // Get the notification manager:
+                      //    NotificationManager notificationManager =
+                      //        Android.App.Application.Context.GetSystemService(Context.NotificationService) as NotificationManager;
 
-                          // Publish the notification:
-                          const int notificationId = 0;
-                          notificationManager.Notify(notificationId, notification);
-                      }
+                      //    // Publish the notification:
+                      //    const int notificationId = 0;
+                      //    notificationManager.Notify(notificationId, notification);
+                      //}
+                      //if (DateTime.Now.ToString("dd/MM/yyyy").Equals(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 10).ToString("dd/MM/yyyy")))
+                      //{
+                      //    string title1 = "Pagar IVA";
+                      //    string contexto1 = "Quedan 2 días para pagar " + Utilities.GetPrevMonthName(DateTime.Now);
+                      //    Notification.Builder builder1 = new Notification.Builder(Android.App.Application.Context)
+                      //    .SetContentTitle(title1)
+                      //    .SetContentText(contexto1)
+                      //    .SetSmallIcon(Resource.Drawable.logoIvaApp);
+
+                      //    // Build the notification:
+                      //    Notification notification1 = builder1.Build();
+
+                      //    // Get the notification manager:
+                      //    NotificationManager notificationManager1 =
+                      //        Android.App.Application.Context.GetSystemService(Context.NotificationService) as NotificationManager;
+
+                      //    // Publish the notification:
+                      //    const int notificationId1 = 0;
+                      //    notificationManager1.Notify(notificationId1, notification1);
+                      //}
                       Thread.Sleep(10000);
                   }
                   //StopSelf();

@@ -20,6 +20,13 @@ namespace IvaApp
             return month;
         }
 
+        public static string GetPrevMonthName(DateTime date)
+        {
+            DateTime lastDayOfMonth = date.AddMonths(-1);
+            string month = lastDayOfMonth.ToString("MMMM", ci);
+            return month;
+        }
+
         public static string GetMonthName(DateTime date)
         {
 
