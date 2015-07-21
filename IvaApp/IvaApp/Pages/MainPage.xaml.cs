@@ -20,18 +20,6 @@ namespace IvaApp
             signupButton.Clicked += signupButton_Clicked;
         }
 
-        private void toolBar()
-        {
-            ToolbarItems.Clear();
-            ToolbarItems.Add(new ToolbarItem
-            {
-                Text = "Salir",
-                Order = ToolbarItemOrder.Secondary,
-                Priority = 0,
-                Command = new Command(() => DependencyService.Get<IClose>().Close_App())
-            });
-        }
-
         private void ShowSettingsPage()
         {
             this.Navigation.PushAsync(new RegistryP());

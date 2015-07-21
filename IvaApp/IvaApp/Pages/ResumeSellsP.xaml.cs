@@ -28,6 +28,27 @@ namespace IvaApp.Pages
             nuevo.Clicked += nuevo_Clicked;
             sellListView.ItemSelected += sellListView_ItemSelected;
             actualizar.Clicked += actualizar_Clicked;
+            report.Clicked += report_Clicked;
+        }
+
+        async void report_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Aviso", "Enviando reporte, espere que le llege el correo para generar uno nuevo", "Aceptar");
+            System.Threading.Tasks.Task.Factory.StartNew(() =>
+            {
+                using (var database = new BuyAndSellDatabase())
+                {
+                    List<BuyAndSell> a = database.GetSells(desdeDate.Date, hastaDate.Date);
+                    DependencyService.Get<ISave>().SaveText(a);
+                }
+                using (var database1 = new UserDatabase())
+                {
+                    User u = database1.GetMail(Utilities.usuario);
+                    String correo = u.Mail.ToString();
+                    String tipo = "venta";
+                    DependencyService.Get<IEmail>().Send_Email(correo, tipo);
+                }
+            });
         }
 
         public ResumeSellsP(List<BuyAndSell> itemSource, DateTime desde, DateTime hasta)

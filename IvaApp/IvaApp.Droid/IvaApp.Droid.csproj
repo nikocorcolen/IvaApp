@@ -115,9 +115,9 @@
     <AndroidResource Include="..\IvaApp\Imagenes\adjust4.png">
       <Link>Resources\drawable\adjust4.png</Link>
     </AndroidResource>
-    <Content Include="..\IvaApp\Imagenes\logoIvaAppBlanco.png">
+    <AndroidResource Include="..\IvaApp\Imagenes\logoIvaAppBlanco.png">
       <Link>Resources\drawable\logoIvaAppBlanco.png</Link>
-    </Content>
+    </AndroidResource>
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>

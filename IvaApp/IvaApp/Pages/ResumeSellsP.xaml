@@ -10,9 +10,9 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto"/>
-          <ColumnDefinition Width="*"/>
           <ColumnDefinition Width="Auto"/>
-          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="Auto"/>
           <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
@@ -61,13 +61,32 @@
         </ListView.ItemTemplate>
       </ListView>
 
-      <AbsoluteLayout VerticalOptions="End" HorizontalOptions="End">
-        <Button x:Name="nuevo"
-            Text="Nueva"
-            TextColor="White"
-            BackgroundColor="#77D065"/>
-      </AbsoluteLayout>
-      
+      <StackLayout>
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+
+          <Button x:Name="report"
+                Text="Enviar Reporte"
+                TextColor="White"
+                BackgroundColor="#77D065"
+                Grid.Row="0"
+                Grid.Column="0"/>
+          <Button x:Name="nuevo"
+                  Text="Nueva"
+                  TextColor="White"
+                  BackgroundColor="#77D065"
+                  HorizontalOptions="End"
+                  Grid.Row="0"
+                  Grid.Column="2"/>
+        </Grid>
+      </StackLayout>
       
     </StackLayout>
   </ScrollView>
