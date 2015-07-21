@@ -37,7 +37,6 @@
     <Compile Include="App.cs" />
     <Compile Include="IClose.cs" />
     <Compile Include="IEmail.cs" />
-    <Compile Include="INotification.cs" />
     <Compile Include="ISave.cs" />
     <Compile Include="Models\Aplicacion.cs" />
     <Compile Include="Pages\BuyAndSellP.xaml.cs">

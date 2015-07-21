@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
 
 namespace IvaApp.Droid
 {
@@ -23,6 +24,10 @@ namespace IvaApp.Droid
         {
             base.OnCreate(bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            //StartService(new Intent(this, typeof(NotificationsService)));
+            //Android.Content.Intent intent = new Android.Content.Intent("com.my.command");
+            //StartService(intent);
+            this.StartService(new Intent(this, typeof(NotificationsService)));
             LoadApplication(new App());
 
         }

@@ -1,4 +1,5 @@
-﻿using IvaApp.Pages;
+﻿
+using IvaApp.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,6 @@ namespace IvaApp
             InitializeComponent();
             Title = "Bienvenido a Iva App";
             //toolBar();
-
             signinButton.Clicked += signinButton_Clicked;
             signupButton.Clicked += signupButton_Clicked;
         }
