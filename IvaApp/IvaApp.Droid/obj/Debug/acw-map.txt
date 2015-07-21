@@ -2,10 +2,10 @@ IvaApp.Droid.MainActivity, IvaApp.Droid;md553d439296c4c9f5dcdd96d7dcdb03fc4.Main
 IvaApp.Droid.MainActivity, IvaApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md553d439296c4c9f5dcdd96d7dcdb03fc4.MainActivity
 IvaApp.Droid.MainActivity;md553d439296c4c9f5dcdd96d7dcdb03fc4.MainActivity
 ivaapp.droid.MainActivity;md553d439296c4c9f5dcdd96d7dcdb03fc4.MainActivity
-IvaApp.Droid.NotificationActivity, IvaApp.Droid;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationActivity
-IvaApp.Droid.NotificationActivity, IvaApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationActivity
-IvaApp.Droid.NotificationActivity;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationActivity
-ivaapp.droid.NotificationActivity;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationActivity
+IvaApp.Droid.NotificationsService, IvaApp.Droid;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationsService
+IvaApp.Droid.NotificationsService, IvaApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationsService
+IvaApp.Droid.NotificationsService;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationsService
+ivaapp.droid.NotificationsService;md553d439296c4c9f5dcdd96d7dcdb03fc4.NotificationsService
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor

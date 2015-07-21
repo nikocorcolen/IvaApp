@@ -140,6 +140,6 @@ C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable-x
 C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\slideout.png
 C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\fondo.png
 C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\logoivaapp.png
+C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\adjust4.png
 C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\R.cs.flag
 C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\uploadflags.txt
-C:\Users\Patolinlp\Documents\IvaApp\IvaApp\IvaApp.Droid\obj\Debug\res\drawable\adjust4.png

@@ -103,12 +103,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <AndroidResource Include="..\IvaApp\Imagenes\slideout.png">
       <Link>Resources\drawable\slideout.png</Link>
     </AndroidResource>
-=======
->>>>>>> ecde06ba4b7e515f790de93c153439bfe12dde1c
     <AndroidResource Include="..\IvaApp\Imagenes\fondo.png">
       <Link>Resources\drawable\fondo.png</Link>
     </AndroidResource>
@@ -118,6 +115,9 @@
     <AndroidResource Include="..\IvaApp\Imagenes\adjust4.png">
       <Link>Resources\drawable\adjust4.png</Link>
     </AndroidResource>
+    <Content Include="..\IvaApp\Imagenes\logoIvaAppBlanco.png">
+      <Link>Resources\drawable\logoIvaAppBlanco.png</Link>
+    </Content>
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>
