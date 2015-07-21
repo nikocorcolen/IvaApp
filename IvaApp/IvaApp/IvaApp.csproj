@@ -14,7 +14,7 @@
     <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <NuGetPackageImportStamp>1ee3447c</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>867f25b0</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +39,9 @@
     <Compile Include="IEmail.cs" />
     <Compile Include="ISave.cs" />
     <Compile Include="Models\Aplicacion.cs" />
+    <Compile Include="Pages\AcercaDe.xaml.cs">
+      <DependentUpon>AcercaDe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BuyAndSellP.xaml.cs">
       <DependentUpon>BuyAndSellP.xaml</DependentUpon>
     </Compile>
@@ -137,12 +140,21 @@
   <ItemGroup>
     <Content Include="Imagenes\adjust4.png" />
     <Content Include="Imagenes\fondo.png" />
+    <Content Include="Imagenes\group.png" />
     <Content Include="Imagenes\logoIvaApp.png" />
     <Content Include="Imagenes\logoIvaAppBlanco.png" />
+    <Content Include="Imagenes\refresh.png" />
     <Content Include="Imagenes\slideout.png" />
+    <Content Include="Imagenes\slideout2.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\SimulateBuyAndSell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Reportes.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -165,7 +177,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Reportes.xaml">
+    <EmbeddedResource Include="Pages\AcercaDe.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

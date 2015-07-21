@@ -4,7 +4,7 @@
              x:Class="IvaApp.Pages.Reportes">
   <ScrollView HorizontalOptions="Fill">
     <StackLayout Padding="0" Spacing="0">
-      <Grid ColumnSpacing="1" BackgroundColor="#fd7d00">
+      <Grid ColumnSpacing="1" BackgroundColor="#df6e00">
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto"/>
           <RowDefinition Height="Auto"/>

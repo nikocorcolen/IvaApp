@@ -15,7 +15,7 @@
           </Grid.ColumnDefinitions>
           <Image Source="logoIvaApp.png"
                  Grid.Row="0" Grid.Column="0"/>
-          <Label Text="Iva App"
+          <Label Text="IVA App"
                Grid.Row="0" Grid.Column="1"
                Font="24"
                FontAttributes="Bold"/>
@@ -47,7 +47,7 @@
         <Label Text="Contactanos"
                Font="18"
                FontAttributes="Bold"/>
-        <Label Text="   iva.app@gmail.com - facebook.com/IvaApp - twitter.com/IvaApp"/>
+        <Label Text="   iva.app.reportes@gmail.com - facebook.com/IvaApp - twitter.com/IvaApp"/>
       </StackLayout>
     </StackLayout>
   </ScrollView>

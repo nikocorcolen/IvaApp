@@ -13,11 +13,11 @@ namespace IvaApp
     {
         public MasterMainPage()
         {
-
             Label header = new Label
             {
-                Text = "Menú",
+                Text = "Opciones",
                 FontSize = Font.SystemFontOfSize(30, FontAttributes.Bold).FontSize,
+                TextColor = Color.Black,
                 HorizontalOptions = LayoutOptions.Center
             };
 

@@ -22,14 +22,12 @@
                 IsPassword="true"
                 TextColor="Black"/>
         <Button x:Name="signinButton"
-                Image="slideout.png"
                 Text="Iniciar Sesión"
                 Opacity="90"
                 TextColor="White"
                 BackgroundColor="#fd7d00"
                 BorderRadius="0"/>
         <Button x:Name="signupButton"
-                Image="slideout.png"
                 Text="Registrarse"
                 TextColor="White"
                 BackgroundColor="#fd7d00"
