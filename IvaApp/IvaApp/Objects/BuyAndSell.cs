@@ -16,6 +16,7 @@ namespace IvaApp
         public Boolean isBuy { get; set; }
         public string ProductName { get; set; }
         public int Factura { get; set; }
+        public string User { get; set; }
 
         public BuyAndSell()
         {

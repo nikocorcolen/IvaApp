@@ -11,10 +11,12 @@ namespace IvaApp.Pages
     public partial class DetailSellP : ContentPage
     {
         private BuyAndSell bsGlobal;
-        public DetailSellP(BuyAndSell bs)
+        Page page;
+        public DetailSellP(BuyAndSell bs, Page page)
         {
             InitializeComponent();
             bsGlobal = bs;
+            this.page = page;
             Title = "Detalle";
             productName.Text = bsGlobal.ProductName;
             factura.Text = bsGlobal.Factura.ToString();
@@ -35,6 +37,7 @@ namespace IvaApp.Pages
             {
                 database.DeleteBuyAndSell(bsGlobal);
                 await Navigation.PushAsync(new ResumeSellsP());
+                Navigation.RemovePage(page);
                 Navigation.RemovePage(this);
             }
         }

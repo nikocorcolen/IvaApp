@@ -82,15 +82,15 @@ namespace IvaApp.Pages
 
         public async void nuevo_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistryBuyP());
-            Navigation.RemovePage(this);
+            await Navigation.PushAsync(new RegistryBuyP(this));
+            //Navigation.RemovePage(this);
         }
 
         public async void buyListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             BuyAndSell bs = (BuyAndSell)e.SelectedItem;
-            await Navigation.PushAsync(new DetailBuyP(bs));
-            Navigation.RemovePage(this);
+            await Navigation.PushAsync(new DetailBuyP(bs, this));
+            //Navigation.RemovePage(this);
             
         }
 

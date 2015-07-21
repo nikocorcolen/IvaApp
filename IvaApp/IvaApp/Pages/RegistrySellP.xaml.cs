@@ -10,32 +10,16 @@ namespace IvaApp.Pages
 {
     public partial class RegistrySellP : ContentPage
     {
-        public RegistrySellP()
+        Page page;
+        public RegistrySellP(Page page)
         {
             InitializeComponent();
+            this.page = page;
             Title = "Nueva Venta";
             //toolBar();
             okButton.Clicked += okButton_Clicked;
         }
 
-        private void toolBar()
-        {
-            ToolbarItems.Clear();
-            ToolbarItems.Add(new ToolbarItem
-            {
-                Text = "Compras",
-                Order = ToolbarItemOrder.Secondary,
-                Priority = 0,
-                Command = new Command(() => Navigation.PushAsync(new ResumeBuysP()))
-            });
-            ToolbarItems.Add(new ToolbarItem
-            {
-                Text = "Salir",
-                Order = ToolbarItemOrder.Secondary,
-                Priority = 0,
-                Command = new Command(() => DependencyService.Get<IClose>().Close_App())
-            });
-        }
 
         public async void okButton_Clicked(object sender, EventArgs e)
         {
@@ -58,7 +42,8 @@ namespace IvaApp.Pages
                     Date = dateEntry.Date,
                     isBuy = false,
                     ProductName = nameEntry.Text.Replace("\n", ""),
-                    Factura = facturaTemp
+                    Factura = facturaTemp,
+                    User = Utilities.usuario
                 };
                 using (var databse = new BuyAndSellDatabase())
                 {
@@ -68,6 +53,7 @@ namespace IvaApp.Pages
                     nameEntry.Text = "";
                     priceEntry.Text = "";
                     await Navigation.PushAsync(new ResumeSellsP());
+                    Navigation.RemovePage(page);
                     Navigation.RemovePage(this);
                 }
             }

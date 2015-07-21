@@ -45,7 +45,7 @@ namespace IvaApp
         {
             //return _connection.Table<BuySell>().ToList();
             //return _connection.Table<BuySell>().OrderBy(bs => bs.Date).ToList();
-            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).OrderBy(bs => bs.Date).ToList();
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.User == Utilities.usuario).OrderBy(bs => bs.Date).ToList();
                 //OrderBy(bs => bs.Date).ToList();
         }
 
@@ -53,18 +53,18 @@ namespace IvaApp
         {
             //start = new DateTime(start.Year, start.Month, start.Day);
             //finish = new DateTime(finish.Year, finish.Month, finish.Day);
-            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.User == Utilities.usuario).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 
         public List<BuyAndSell> GetSells(DateTime start, DateTime finish)
         {
-            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
+            return _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.User == Utilities.usuario).Where(bs => bs.Date >= start && bs.Date <= finish).OrderBy(bs => bs.Date).ToList();
         }
 
         public string GetIvaMes(DateTime start, DateTime finish) 
         {
-            Double credito =  _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.Date >= start && bs.Date <= finish).Sum(bs => bs.Price);
-            Double debito = _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.Date >= start && bs.Date <= finish).Sum(bs => bs.Price);
+            Double credito =  _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == true).Where(bs => bs.User == Utilities.usuario).Where(bs => bs.Date >= start && bs.Date <= finish).Sum(bs => bs.Price);
+            Double debito = _connection.Table<BuyAndSell>().Where(bs => bs.isBuy == false).Where(bs => bs.User == Utilities.usuario).Where(bs => bs.Date >= start && bs.Date <= finish).Sum(bs => bs.Price);
             return credito + "+" + debito;
         }
 

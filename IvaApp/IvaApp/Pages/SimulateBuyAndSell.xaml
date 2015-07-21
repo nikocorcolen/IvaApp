@@ -5,11 +5,15 @@
              x:Class="IvaApp.Pages.SimulateBuyAndSell">
   <ScrollView>
     <StackLayout Padding="50" Spacing="10">
+      <Label Text="Compra:">
+      </Label>
       <Entry x:Name="valorCompraEntry"
              Placeholder="Valor de Compra"
              Keyboard="Numeric"
              TextColor="White">
       </Entry>
+      <Label Text="Venta:">
+      </Label>
       <Entry x:Name="valorVentaEntry"
              Placeholder="Valor de Venta"
              Keyboard="Numeric"

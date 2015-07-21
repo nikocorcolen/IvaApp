@@ -73,22 +73,22 @@ namespace IvaApp.Pages
             using (var database = new BuyAndSellDatabase())
             {
                 //buyListView.ItemsSource = database.GetBuys(desdeDate.Date, hastaDate.Date);
-                await Navigation.PushAsync(new ResumeBuysP(database.GetSells(desdeDate.Date, hastaDate.Date), desdeDate.Date, hastaDate.Date));
+                await Navigation.PushAsync(new ResumeSellsP(database.GetSells(desdeDate.Date, hastaDate.Date), desdeDate.Date, hastaDate.Date));
                 Navigation.RemovePage(this);
             }
         }
 
         public async void nuevo_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistrySellP());
-            Navigation.RemovePage(this);
+            await Navigation.PushAsync(new RegistrySellP(this));
+            //Navigation.RemovePage(this);
         }
 
         public async void sellListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             BuyAndSell bs = (BuyAndSell)e.SelectedItem;
-            await Navigation.PushAsync(new DetailSellP(bs));
-            Navigation.RemovePage(this);
+            await Navigation.PushAsync(new DetailSellP(bs, this));
+            //Navigation.RemovePage(this);
         }
 
 
