@@ -2,57 +2,63 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.Reportes">
-  <ScrollView>
+  <ScrollView HorizontalOptions="Fill">
     <StackLayout Padding="0" Spacing="0">
-      <Grid>
+      <Grid ColumnSpacing="1" BackgroundColor="#fd7d00">
         <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
           <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto"/>
           <ColumnDefinition Width="*"/>
-          <ColumnDefinition Width="Auto"/>
           <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="Desde"
-               Text="Del:"
+               Text="Fecha desde:"
                TextColor="White"
                FontSize="Medium"
-               Grid.Row="0"
-               Grid.Column="0"
+               Grid.Row="0" Grid.Column="0"
+               HorizontalOptions="Center"
                VerticalOptions="Center"/>
         <DatePicker x:Name="desdeDate"
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start">
+                    Grid.Row="1" Grid.Column="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
           <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
         </DatePicker>
         <Label x:Name="Hasta"
-               Text="Al:"
+               Text="Fecha hasta:"
                TextColor="White"
                FontSize="Medium"
-               Grid.Row="0"
-               Grid.Column="2"
+               Grid.Row="0" Grid.Column="1"
+               HorizontalOptions="Center"
                VerticalOptions="Center"/>
         <DatePicker x:Name="hastaDate"
-                    Grid.Row="0"
-                    Grid.Column="3"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start">
+                    Grid.Row="1" Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
           <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
         </DatePicker>
       </Grid>
 
-      <StackLayout Padding="70" Spacing="20">
+      <StackLayout Padding="50" Spacing="20">
+        <Label Text="¿Qué deseas enviar a tu correo?"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalOptions="Center"/>
         <Button x:Name="comprasMensuales"
-                Text="Compras"
+                Text="Enviar Compras"
                 TextColor="White"
-                BackgroundColor="#77D065"/>
+                BackgroundColor="#fd7d00"
+                BorderRadius="0"
+                HorizontalOptions="Center"/>
         <Button x:Name="ventasMensuales"
-                Text="Ventas"
+                Text="Enviar Ventas"
                 TextColor="White"
-                BackgroundColor="#77D065"/>
+                BackgroundColor="#fd7d00"
+                BorderRadius="0"
+                HorizontalOptions="Center"/>
       </StackLayout>
     </StackLayout>
   </ScrollView>

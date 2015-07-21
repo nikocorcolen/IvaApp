@@ -4,54 +4,49 @@
              x:Class="IvaApp.Pages.ResumeBuysP">
   <ScrollView HorizontalOptions="Fill">
     <StackLayout Padding="0" Spacing="0">
-      <Grid>
+      <Grid ColumnSpacing="1" BackgroundColor="#fd7d00">
         <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
           <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto"/>
-          <ColumnDefinition Width="Auto"/>
-          <ColumnDefinition Width="Auto"/>
-          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
           <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         
         <Label x:Name="Desde"
-               Text="Del:"
+               Text="Fecha desde:"
                TextColor="White"
                FontSize="Medium"
-               Grid.Row="0"
-               Grid.Column="0"
-               HorizontalOptions="Start"
+               Grid.Row="0" Grid.Column="0"
+               HorizontalOptions="Center"
                VerticalOptions="Center"/>
         <DatePicker x:Name="desdeDate"
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start">
-          <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
+                    Grid.Row="1" Grid.Column="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                    <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
         </DatePicker>
         <Label x:Name="Hasta"
-               Text="Al:"
+               Text="Fecha hasta:"
                TextColor="White"
                FontSize="Medium"
-               Grid.Row="0"
-               Grid.Column="2"
-               HorizontalOptions="Start"
+               Grid.Row="0" Grid.Column="1"
+               HorizontalOptions="Center"
                VerticalOptions="Center"/>
         <DatePicker x:Name="hastaDate"
-                    Grid.Row="0"
-                    Grid.Column="3"
-                    HorizontalOptions="Start"
-                    VerticalOptions="Start">
-          <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
+                    Grid.Row="1" Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                    <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
         </DatePicker>
         <Button x:Name="actualizar"
                 Image="slideout.png"
-                HorizontalOptions="End"
-                Grid.Row="0"
-                Grid.Column="4"
-                BackgroundColor="#77D065"/>
+                HorizontalOptions="Center"
+                Grid.Row="1" Grid.Column="2"
+                BorderRadius="0"
+                BackgroundColor="#df6e00"/>
       </Grid>
       
       <ListView x:Name="buyListView">
@@ -63,13 +58,12 @@
         </ListView.ItemTemplate>
       </ListView>
 
-      <StackLayout>
-        <Grid>
+      <StackLayout >
+        <Grid ColumnSpacing="1" BackgroundColor="Black">
           <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
           </Grid.RowDefinitions>
           <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
           </Grid.ColumnDefinitions>
@@ -77,15 +71,19 @@
           <Button x:Name="report"
                 Text="Enviar Reporte"
                 TextColor="White"
-                BackgroundColor="#77D065"
+                BackgroundColor="#fd7d00"
+                BorderColor="Black"
+                BorderRadius="0"
                 Grid.Row="0"
                 Grid.Column="0"/>
           <Button x:Name="nuevo"
-                  Text="Nueva"
-                  TextColor="White"
-                  BackgroundColor="#77D065"
-                  Grid.Row="0"
-                  Grid.Column="2"/>
+                Text="Nueva"
+                TextColor="White"
+                BorderRadius="0"
+                BorderColor="Black"
+                BackgroundColor="#fd7d00"
+                Grid.Row="0"
+                Grid.Column="1"/>
         </Grid>
       </StackLayout>
 

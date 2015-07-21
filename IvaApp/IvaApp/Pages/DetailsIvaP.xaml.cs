@@ -40,7 +40,7 @@ namespace IvaApp.Pages
                 }
                 else
                 {
-                    iva1.TextColor = Color.White;
+                    iva1.TextColor = Color.Gray;
                 }
                 mes1.Text = Utilities.GetMonthName(mesActualI);
                 iva1.Text = Utilities.GetIva(ivaMes1);
@@ -64,7 +64,7 @@ namespace IvaApp.Pages
                 }
                 else
                 {
-                    iva2.TextColor = Color.White;
+                    iva2.TextColor = Color.Gray;
                 }
                 mes2.Text = Utilities.GetMonthName(mesActualI);
                 iva2.Text = Utilities.GetIva(ivaMes2);
@@ -88,7 +88,7 @@ namespace IvaApp.Pages
                 }
                 else
                 {
-                    iva3.TextColor = Color.White;
+                    iva3.TextColor = Color.Gray;
                 }
                 mes3.Text = Utilities.GetMonthName(mesActualI);
                 iva3.Text = Utilities.GetIva(ivaMes3);
@@ -111,19 +111,17 @@ namespace IvaApp.Pages
                 }
                 else
                 {
-                    iva.TextColor = Color.White;
+                    iva.TextColor = Color.Gray;
                 }
                 mesActual.Text = Utilities.GetMonthName(mesActualI);
                 iva.Text = Utilities.GetIva(ivaTotal);
 
-                //Total
                 Double ivaglbal = ivaMes1 + ivaMes2 + ivaMes3;
                 if (ivaglbal > 0)
                 {
                     ivaglbal = 0;
                 }
                 ivaglbal += ivaTotal;
-                //total.Text = Utilities.GetTotal(ivaglbal);
 
             };
         }

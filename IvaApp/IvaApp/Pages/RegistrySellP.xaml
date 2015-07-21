@@ -4,26 +4,41 @@
              x:Class="IvaApp.Pages.RegistrySellP">
   <ScrollView>
     <StackLayout Padding="50" Spacing="10">
+      <Label Text="Nombre del Producto"
+             Font="18"
+             FontAttributes="Bold"/>
       <Entry x:Name="nameEntry"
-             Placeholder="Venta"
+             Placeholder="Producto o Resumen"
              Keyboard="Text"
-             TextColor="White"/>
+             BackgroundColor="#ececec"
+             TextColor="Black"/>
+      <Label Text="Número de Factura o Boleta"
+             Font="18"
+             FontAttributes="Bold"/>
       <Entry x:Name="facturaEntry"
-             Placeholder="Número de factura o boleta"
+             Placeholder="Factura o Boleta"
              Keyboard="Numeric"
-             TextColor="White"/>
+             BackgroundColor="#ececec"
+             TextColor="Black"/>
+      <Label Text="Fecha"
+             Font="18"
+             FontAttributes="Bold"/>
       <DatePicker x:Name="dateEntry"
                   IsEnabled="False">
         <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
       </DatePicker>
+      <Label Text="Precio con IVA incluido"
+             Font="18"
+             FontAttributes="Bold"/>
       <Entry x:Name="priceEntry"
-             Placeholder="Valor iva incluido"
+             Placeholder="Valor IVA incluido"
              Keyboard="Numeric"
-             TextColor="White"/>
+             TextColor="Black"/>
       <Button x:Name="okButton"
-              Text="Ingresar venta"
+              Text="Ingresar Venta"
               TextColor="White"
-              BackgroundColor="#77D065"/>
+              BorderRadius="0"
+              BackgroundColor="#fd7d00"/>
     </StackLayout>
   </ScrollView>
 </ContentPage>

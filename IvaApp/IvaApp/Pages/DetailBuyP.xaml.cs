@@ -17,7 +17,7 @@ namespace IvaApp.Pages
             InitializeComponent();
             bsGlobal = bs;
             this.page = page;
-            Title = "Detalle";
+            Title = "Detalle de la Compra";
             productName.Text = bsGlobal.ProductName;
             factura.Text = bsGlobal.Factura.ToString();
             dateProduct.Text = bsGlobal.Date.Month + "/" + bsGlobal.Date.Day + "/" + bsGlobal.Date.Year;

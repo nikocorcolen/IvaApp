@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvaApp.Pages.AcercaDe">
+  <ScrollView>
+    <StackLayout Spacing="10" Padding="10">
+      <StackLayout Spacing="10" Padding="10" BackgroundColor="White">
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <Image Source="logoIvaApp.png"
+                 Grid.Row="0" Grid.Column="0"/>
+          <Label Text="Iva App"
+               Grid.Row="0" Grid.Column="1"
+               Font="24"
+               FontAttributes="Bold"/>
+        </Grid>
+        <Label Text="Versión"
+               Font="18"
+               FontAttributes="Bold"/>
+        <Label Text="   1.0 para Android"/>
+        <Label Text="Objetivo"
+               Font="18"
+               FontAttributes="Bold"/>
+        <Label Text="   Aplicación creada en el curso de Tecnologías Móviles"/>
+        <Label Text="Lugar"
+               Font="18"
+               FontAttributes="Bold"/>
+        <Label Text="   Facultad de Ingeniería, Universidad de Talca, Chile"/>
+        <Label Text="Misión"
+               Font="18"
+               FontAttributes="Bold"/>
+        <Label Text="   Esta aplicación ha sido creada para el control de compras y ventas de las Pymes"/>
+        <Label Text="Desarrolladores"
+               Font="18"
+               FontAttributes="Bold"/>
+        <Label Text="   Nicolás Maturana - Patricio Valderrama"/>
+        <Label Text="Supervisor"
+               Font="18"
+               FontAttributes="Bold"/>
+        <Label Text="   Renzo Angles"/>
+        <Label Text="Contactanos"
+               Font="18"
+               FontAttributes="Bold"/>
+        <Label Text="   iva.app@gmail.com - facebook.com/IvaApp - twitter.com/IvaApp"/>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

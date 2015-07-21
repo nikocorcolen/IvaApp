@@ -9,15 +9,17 @@
       <Label x:Name="mes3"
              Text=""
              FontSize="Medium"
-             TextColor="White"/>
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <StackLayout Orientation="Horizontal">
         <Label Text="19% IVA:"
-             FontSize="Medium"
-             TextColor="White"/>
+               FontSize="Medium"
+               TextColor="#404040"
+               FontAttributes="Bold"/>
         <Label x:Name="iva3"
                Text=""
                FontSize="Medium"
-               TextColor="White"/>
+               TextColor="Gray"/>
       </StackLayout>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
@@ -25,15 +27,17 @@
       <Label x:Name="mes2"
              Text=""
              FontSize="Medium"
-             TextColor="White"/>
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <StackLayout Orientation="Horizontal">
         <Label Text="19% IVA:"
-             FontSize="Medium"
-             TextColor="White"/>
+               FontSize="Medium"
+               TextColor="#404040"
+               FontAttributes="Bold"/>
         <Label x:Name="iva2"
                Text=""
                FontSize="Medium"
-               TextColor="White"/>
+               TextColor="Gray"/>
       </StackLayout>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
@@ -41,15 +45,17 @@
       <Label x:Name="mes1"
              Text=""
              FontSize="Medium"
-             TextColor="White"/>
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <StackLayout Orientation="Horizontal">
         <Label Text="19% IVA:"
-             FontSize="Medium"
-             TextColor="White"/>
+               FontSize="Medium"
+               TextColor="#404040"
+               FontAttributes="Bold"/>
         <Label x:Name="iva1"
                Text=""
                FontSize="Medium"
-               TextColor="White"/>
+               TextColor="Gray"/>
       </StackLayout>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
@@ -57,15 +63,17 @@
       <Label x:Name="mesActual"
              Text=""
              FontSize="Medium"
-             TextColor="White"/>
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <StackLayout Orientation="Horizontal">
         <Label Text="19% IVA:"
-             FontSize="Medium"
-             TextColor="White"/>
+               FontSize="Medium"
+               TextColor="#404040"
+               FontAttributes="Bold"/>
         <Label x:Name="iva"
                Text=""
                FontSize="Medium"
-               TextColor="White"/>
+               TextColor="Gray"/>
       </StackLayout>
 
       <!--<BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>

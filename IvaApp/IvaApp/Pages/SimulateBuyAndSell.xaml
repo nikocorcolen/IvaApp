@@ -5,29 +5,33 @@
              x:Class="IvaApp.Pages.SimulateBuyAndSell">
   <ScrollView>
     <StackLayout Padding="50" Spacing="10">
-      <Label Text="Compra:">
-      </Label>
+      <Label Text="Valor de la Compra:"
+             FontSize="Medium"
+             FontAttributes="Bold"/>
       <Entry x:Name="valorCompraEntry"
-             Placeholder="Valor de Compra"
+             Placeholder="Compra a Simular"
              Keyboard="Numeric"
              TextColor="White">
       </Entry>
-      <Label Text="Venta:">
-      </Label>
+      <Label Text="Valor de la Venta:"
+             FontSize="Medium"
+             FontAttributes="Bold"/>
       <Entry x:Name="valorVentaEntry"
-             Placeholder="Valor de Venta"
+             Placeholder="Venta a Simular"
              Keyboard="Numeric"
              TextColor="White">
       </Entry>
       <Button x:Name="buttonActualizar"
-              Text="Simular Iva"
-              TextColor="White">
-      </Button>
+              Text="Simular IVA"
+              TextColor="White"
+              BackgroundColor="#fd7d00"
+              BorderRadius="0"/>
       <Label x:Name="valorIvaActual"
              Text=""
-             Font="24"
+             Font="20"
+             FontAttributes="Bold"
              HorizontalOptions="Center"
-             TextColor="White"/>
+             TextColor="Black"/>
     </StackLayout>
   </ScrollView>
 </ContentPage>

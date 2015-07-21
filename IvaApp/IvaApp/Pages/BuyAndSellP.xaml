@@ -2,35 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IvaApp.Pages.BuyAndSellP">
-  <ScrollView>
-    <StackLayout Padding="40" Spacing="20">
-      <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto"/>
-          <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*"/>
-          <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <Button x:Name="resumeBuyButton"
-                Grid.Row="0" Grid.Column="0"
-                Text="Compras"
-                TextColor="White"
-                BackgroundColor="#77D065"/>
-        <Button x:Name="resumeSellButton"
-                Grid.Row="0" Grid.Column="1"
-                Text="Ventas"
-                TextColor="White"
-                BackgroundColor="#77D065"/>
-      </Grid>
-      <Button x:Name="detailIvaButton"
-              HorizontalOptions="Center"
-              Text="Iva"
+  <ScrollView Padding="40">
+    <StackLayout VerticalOptions="Center">
+      <Button x:Name="resumeBuyButton"
+              Text="Compras del Mes"
               TextColor="White"
-              BackgroundColor="#77D065"/>
+              BorderRadius="0"  
+              BackgroundColor="#fd7d00"/>
+      <Button x:Name="resumeSellButton"
+              Text="Ventas del Mes"
+              TextColor="White"
+              BorderRadius="0"  
+              BackgroundColor="#fd7d00"/>
+      <Button x:Name="detailIvaButton"
+              Text="Últimos IVAs"
+              TextColor="White"
+              BorderRadius="0"
+              BackgroundColor="#fd7d00"/>
     </StackLayout>
   </ScrollView>
 </ContentPage>

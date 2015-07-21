@@ -10,14 +10,14 @@ namespace IvaApp.Pages
 {
     public partial class SimulateBuyAndSell : ContentPage
     {
-        private static string textIva = "Iva Total: ";
+        private static string textIva = "IVA Total: ";
         private static double ivaActual = 0;
         private static double ivaParcial = 0;
 
         public SimulateBuyAndSell()
         {
             InitializeComponent();
-            Title = "Simular Iva";
+            Title = "Simular IVA";
 
             using (var databse = new BuyAndSellDatabase())
             {

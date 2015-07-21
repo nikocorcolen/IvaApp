@@ -6,63 +6,75 @@
     <StackLayout Padding="15" Spacing="10">
 
       <Label Text="Producto:"
-           FontSize="Medium"
-           TextColor="White"/>
+             FontSize="Medium"
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <Label x:Name="productName"
              Text=""
              FontSize="Small"
-             TextColor="White"/>
-
+             TextColor="Gray"/>
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
 
       <Label Text="Factura o Boleta:"
-           FontSize="Medium"
-           TextColor="White"/>
+             FontSize="Medium"
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <Label x:Name="factura"
              Text=""
              FontSize="Small"
-             TextColor="White"/>
+             TextColor="Gray"/>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
 
       <Label Text="Fecha:"
-           FontSize="Medium"
-           TextColor="White"/>
+             FontSize="Medium"
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <Label x:Name="dateProduct"
              Text=""
              FontSize="Small"
-             TextColor="White"/>
+             TextColor="Gray"/>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
 
       <Label Text="NETO:"
-           FontSize="Medium"
-           TextColor="White"/>
+             FontSize="Medium"
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <Label x:Name="neto"
              Text=""
              FontSize="Small"
-             TextColor="White"/>
+             TextColor="Gray"/>
+
+      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+
       <Label Text="19% IVA:"
-           FontSize="Medium"
-           TextColor="White"/>
+             FontSize="Medium"
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <Label x:Name="iva"
              Text=""
              FontSize="Small"
-             TextColor="White"/>
+             TextColor="Gray"/>
+
+      <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
+
       <Label Text="TOTAL:"
-           FontSize="Medium"
-           TextColor="White"/>
+             FontSize="Medium"
+             TextColor="Black"
+             FontAttributes="Bold"/>
       <Label x:Name="total"
              Text=""
              FontSize="Small"
-             TextColor="White"/>
+             TextColor="Gray"/>
 
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
 
       <Button x:Name="eliminarButton"
               Text="Eliminar"
               TextColor="White"
-              BackgroundColor="#77D065"/>
+              BorderRadius="0"
+              BackgroundColor="#fd7d00"/>
 
     </StackLayout>
   </ScrollView>
