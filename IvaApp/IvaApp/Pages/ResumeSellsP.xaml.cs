@@ -26,7 +26,7 @@ namespace IvaApp.Pages
                 sellListView.ItemsSource = database.GetSells(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
             }
             nuevo.Clicked += nuevo_Clicked;
-            sellListView.ItemSelected += sellListView_ItemSelected;
+            sellListView.ItemTapped += sellListView_ItemTapped;
             actualizar.Clicked += actualizar_Clicked;
             report.Clicked += report_Clicked;
         }
@@ -63,9 +63,17 @@ namespace IvaApp.Pages
 
             sellListView.ItemsSource = itemSource;
 
-            sellListView.ItemSelected += sellListView_ItemSelected;
+            sellListView.ItemTapped += sellListView_ItemTapped;
             nuevo.Clicked += nuevo_Clicked;
             actualizar.Clicked += actualizar_Clicked;
+        }
+
+        async void sellListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            BuyAndSell bs = (BuyAndSell)e.Item;
+            await Navigation.PushAsync(new DetailSellP(bs, this));
+            //Navigation.RemovePage(this);
+            ((ListView)sender).SelectedItem = null;
         }
 
         public async void actualizar_Clicked(object sender, EventArgs e)
@@ -81,13 +89,6 @@ namespace IvaApp.Pages
         public async void nuevo_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegistrySellP(this));
-            //Navigation.RemovePage(this);
-        }
-
-        public async void sellListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            BuyAndSell bs = (BuyAndSell)e.SelectedItem;
-            await Navigation.PushAsync(new DetailSellP(bs, this));
             //Navigation.RemovePage(this);
         }
 

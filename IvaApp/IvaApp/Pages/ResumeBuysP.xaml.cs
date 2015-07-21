@@ -27,10 +27,18 @@ namespace IvaApp.Pages
                 List<BuyAndSell> a = database.GetBuys(Utilities.GetStartMonth(), Utilities.GetFinishMonth());
             }
 
-            buyListView.ItemSelected += buyListView_ItemSelected;
+            buyListView.ItemTapped += buyListView_ItemTapped;
             nuevo.Clicked += nuevo_Clicked;
             actualizar.Clicked += actualizar_Clicked;
             report.Clicked += report_Clicked;
+        }
+
+        async void buyListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            BuyAndSell bs = (BuyAndSell)e.Item;
+            await Navigation.PushAsync(new DetailBuyP(bs, this));
+            //Navigation.RemovePage(this);
+            ((ListView)sender).SelectedItem = null;
         }
 
         async void report_Clicked(object sender, EventArgs e)
@@ -64,8 +72,7 @@ namespace IvaApp.Pages
             hastaDate.Date = hasta.Date;
 
             buyListView.ItemsSource = itemSource;
-
-            buyListView.ItemSelected += buyListView_ItemSelected;
+            buyListView.ItemTapped += buyListView_ItemTapped;
             nuevo.Clicked += nuevo_Clicked;
             actualizar.Clicked += actualizar_Clicked;
         }
@@ -84,14 +91,6 @@ namespace IvaApp.Pages
         {
             await Navigation.PushAsync(new RegistryBuyP(this));
             //Navigation.RemovePage(this);
-        }
-
-        public async void buyListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            BuyAndSell bs = (BuyAndSell)e.SelectedItem;
-            await Navigation.PushAsync(new DetailBuyP(bs, this));
-            //Navigation.RemovePage(this);
-            
         }
 
 
