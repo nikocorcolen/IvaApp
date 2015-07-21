@@ -20,6 +20,7 @@
              TextColor="Black"/>
       <Button x:Name="registryButton"
               Text="Aceptar Registro"
+              Image="check.png"
               TextColor="White"
               BorderRadius="0"
               BackgroundColor="#fd7d00"/>

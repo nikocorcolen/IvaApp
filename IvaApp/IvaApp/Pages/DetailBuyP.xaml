@@ -71,6 +71,7 @@
       <BoxView Color="Black" WidthRequest="100" HeightRequest="1"/>
 
       <Button x:Name="eliminarButton"
+              Image="rubbish.png"
               Text="Eliminar"
               TextColor="White"
               BorderRadius="0"

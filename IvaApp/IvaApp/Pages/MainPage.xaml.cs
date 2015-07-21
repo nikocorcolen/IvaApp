@@ -14,7 +14,7 @@ namespace IvaApp
         public MainPage()
         {
             InitializeComponent();
-            Title = "Bienvenido a Iva App";
+            Title = "Bienvenido a IVA App";
             //toolBar();
             signinButton.Clicked += signinButton_Clicked;
             signupButton.Clicked += signupButton_Clicked;

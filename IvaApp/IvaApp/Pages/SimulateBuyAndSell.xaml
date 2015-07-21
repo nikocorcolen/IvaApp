@@ -22,6 +22,7 @@
              TextColor="Black">
       </Entry>
       <Button x:Name="buttonActualizar"
+              Image="math.png"
               Text="Simular IVA"
               TextColor="White"
               BackgroundColor="#fd7d00"

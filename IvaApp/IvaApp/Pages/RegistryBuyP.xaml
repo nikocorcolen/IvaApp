@@ -35,6 +35,7 @@
              Keyboard="Numeric"
              TextColor="Black"/>
       <Button x:Name="okButton"
+              Image="add.png"
               Text="Ingresar Compra"
               TextColor="White"
               BorderRadius="0"

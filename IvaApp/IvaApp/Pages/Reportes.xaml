@@ -4,7 +4,7 @@
              x:Class="IvaApp.Pages.Reportes">
   <ScrollView HorizontalOptions="Fill">
     <StackLayout Padding="0" Spacing="0">
-      <Grid ColumnSpacing="1" BackgroundColor="#df6e00">
+      <Grid ColumnSpacing="1" BackgroundColor="#fd7d00">
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto"/>
           <RowDefinition Height="Auto"/>
@@ -48,12 +48,14 @@
                TextColor="Black"
                HorizontalOptions="Center"/>
         <Button x:Name="comprasMensuales"
+                Image="cart.png"
                 Text="Enviar Compras"
                 TextColor="White"
                 BackgroundColor="#fd7d00"
                 BorderRadius="0"
                 HorizontalOptions="Center"/>
         <Button x:Name="ventasMensuales"
+                Image="like.png"
                 Text="Enviar Ventas"
                 TextColor="White"
                 BackgroundColor="#fd7d00"

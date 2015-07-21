@@ -4,7 +4,7 @@
              x:Class="IvaApp.Pages.ResumeSellsP">
   <ScrollView HorizontalOptions="Fill">
     <StackLayout Padding="0" Spacing="0">
-      <Grid ColumnSpacing="1" BackgroundColor="#df6e00">
+      <Grid ColumnSpacing="1" BackgroundColor="#fd7d00">
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto"/>
           <RowDefinition Height="Auto"/>
@@ -43,7 +43,8 @@
                     <DatePicker.Format>dd-MM-yyyy</DatePicker.Format>
         </DatePicker>
         <Button x:Name="actualizar"
-                Text="Actualizar"
+                Text=""
+                Image ="refresh.png"
                 HorizontalOptions="Center"
                 Grid.Row="1" Grid.Column="2"
                 BorderRadius="0"
@@ -65,11 +66,12 @@
             <RowDefinition Height="Auto"/>
           </Grid.RowDefinitions>
           <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
           </Grid.ColumnDefinitions>
 
           <Button x:Name="report"
+                Image="disk.png"
                 Text="Enviar Reporte"
                 TextColor="White"
                 BackgroundColor="#fd7d00"
@@ -78,6 +80,7 @@
                 Grid.Row="0"
                 Grid.Column="0"/>
           <Button x:Name="nuevo"
+                Image="add.png"
                 Text="Nueva"
                 TextColor="White"
                 BorderRadius="0"
