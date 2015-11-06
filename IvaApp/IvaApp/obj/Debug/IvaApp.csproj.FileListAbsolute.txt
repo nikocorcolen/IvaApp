@@ -73,3 +73,4 @@ C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp\obj\Debug\Det
 C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp\obj\Debug\DetailsIvaP.xaml.g.cs
 C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.dll
 C:\Users\Patolinlp\Utalca\Tecnologias Moviles\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.pdb
+C:\Users\Nicolas\Documents\IvaApp\IvaApp\IvaApp\obj\Debug\IvaApp.csprojResolveAssemblyReference.cache
